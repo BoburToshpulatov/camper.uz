@@ -14,14 +14,14 @@ const Navbar = () => {
     <NavContainer>
     <Logodiv>
         <img src={hamburger} alt='img' />
-        <h1>Camper</h1>
+        <Link to="/" style={{textDecoration:'none'}}><h1>Camper</h1></Link>
     </Logodiv>
     <Menu>
-<Link to='/motor'><p>Motor</p></Link>
-<Link to='/caravan'><p>Caravan</p></Link>
-<Link to='/tuning'><p>Tuning</p></Link>
-<Link to='/usedcar'><p>Used Car</p></Link>
-<Link to='/camping'><p>Camping Place</p></Link>
+<Link to='/motor' style={{textDecoration:'none'}}><p>Motor</p></Link>
+<Link to='/caravan' style={{textDecoration:'none'}}><p>Caravan</p></Link>
+<Link to='/tuning' style={{textDecoration:'none'}}><p>Tuning</p></Link>
+<Link to='/usedcar' style={{textDecoration:'none'}}><p>Used Car</p></Link>
+<Link to='/camping' style={{textDecoration:'none'}}><p>Camping Place</p></Link>
     </Menu>
     <Icons>
       <img src={cart} alt="cart-icon" />

@@ -1,0 +1,13 @@
+.slider-container{
+ margin: 0 auto;
+    
+    
+}
+.slick-track{
+    margin: auto;
+}
+
+
+  .rotate-180 {
+    transform: rotate(180deg);
+  }

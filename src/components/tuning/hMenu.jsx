@@ -2,6 +2,7 @@ import React from 'react'
 import { BrandStar, Button, CarBoxes, CarCollection, FromToButton, Price } from './motor'
 import star from '../../assets/bx_bxs-star (1).svg'
 import { tuning } from './mock/mock'
+import { Link } from 'react-router-dom'
 
 
 
@@ -11,6 +12,7 @@ const HMenuComponent = () => {
     <CarCollection>
         {tuning.map((value, index) => {
                 return ( 
+                  <Link to={`/tuning-detail/${value.id}`} style={{textDecoration:'none'}}>
                 <CarBoxes key={value.id}>
                     <img src={value.car.photo} alt="car-icon" />
                     <h1>{value.car.name}</h1>
@@ -25,6 +27,7 @@ const HMenuComponent = () => {
                 <Button style={{border: '1px solid var(--blue, #006DAB)', width: '87px'}}>Compare</Button>
                 </FromToButton>
                 </CarBoxes>
+                </Link>
                 );
             })
         }

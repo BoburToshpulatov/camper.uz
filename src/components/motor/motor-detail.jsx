@@ -1,7 +1,7 @@
 import React from 'react'
 import { motordata } from '../mock/motor'
 import { useParams } from 'react-router-dom'
-import { Best, CarDetails, CarDetailsLeft, CarDetailsRight, CompanyLicense, CompanyLicenseLeft, CompanyLicenseRight, DetailBackground, Infbox1, Infbox2, Infbox3, ItemReview, ItemReviewInformation, NumberEmail, Questions, QuestionsLeft, QuestionsLeftBottom, QuestionsLeftTop, QuestionsRight, RightNamePrice, TabOptions } from './motor';
+import { Best, CarDetails, CarDetailsLeft, CarDetailsRight, CompanyLicense, CompanyLicenseLeft, CompanyLicenseRight, Description, DescriptionLeft, DescriptionRight, DescriptionRight1, DescriptionRight2, DescriptionRight3, DescriptionRight4, DetailBackground, Infbox1, Infbox2, Infbox3, ItemReview, ItemReviewInformation, NumberEmail, Questions, QuestionsLeft, QuestionsLeftBottom, QuestionsLeftTop, QuestionsRight, RightNamePrice, TabOptions } from './motor';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import PropTypes from 'prop-types';
@@ -12,10 +12,10 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import top100Films from './top100Films';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 
 
 
@@ -88,6 +88,58 @@ const MotorDetail = () => {
         </CompanyLicense>
        </CarDetailsRight> 
         </CarDetails>
+
+        <Description>
+       <DescriptionLeft>
+        <h1>Comfort</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</p>
+        </DescriptionLeft> 
+        <DescriptionRight></DescriptionRight>
+       </Description>
+
+       <Description>
+        <DescriptionRight1></DescriptionRight1>
+       <DescriptionLeft>
+        <h1 style={{marginRight:'80px'}}>Tidying away is child’s play!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</p>
+        </DescriptionLeft> 
+       </Description>
+
+       <Description>
+       <DescriptionLeft>
+        <h1 style={{marginRight:'229px'}}>Ventilated , Lit up</h1>
+        <p>In our vans and motorhomes, all our body lighting is 100% LED: a guarantee of energy efficiency and durability. <br />
+As for ventilation, we also often offer double ventilation in the bathroom (Skylight + window), which is very popular with our customers… <br />
+Camper relies on legendary Seitz windows. They offer the best insulation and are also the easiest to use and safest because they can’t be removed from the outside.												
+					</p>
+        </DescriptionLeft> 
+        <DescriptionRight2></DescriptionRight2>
+       </Description>
+
+       <Description>
+        <DescriptionRight3></DescriptionRight3>
+       <DescriptionLeft>
+        <h1 style={{marginRight:'322px'}}>Easy access</h1>
+        <p>We add little touches that your joints will thank you for… <br />
+All our motorhomes are equipped with a built-in step to facilitate entry to the vehicle. <br />
+All our vans are equipped with an electric step.</p>
+        </DescriptionLeft> 
+       </Description>
+
+       <Description>
+       <DescriptionLeft>
+        <h1 style={{marginRight:'166px',marginTop:'50px'}}>Heating when driving</h1>
+        <p>Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. <br />
+        One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.
+					</p>
+          <Stack style={{marginTop:'10px',marginRight:'180px'}} spacing={2} direction="row">
+      <Button style={{width:'150px'}} variant="contained">ADD TO CART</Button>
+      <Button style={{width:'150px',border:'1.5px solid'}} variant="outlined">COMPARE</Button>
+       </Stack>
+        </DescriptionLeft> 
+        <DescriptionRight4></DescriptionRight4>
+       </Description>
+
 <TabOptions>
 <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)' }}>
@@ -129,7 +181,7 @@ const MotorDetail = () => {
                 </ItemReviewInformation>
                 );
             })
-        }
+        };
     
         </ItemReview>
       </CustomTabPanel>
@@ -142,7 +194,7 @@ const MotorDetail = () => {
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" />
+     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -150,7 +202,7 @@ const MotorDetail = () => {
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" />
+     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -158,7 +210,7 @@ const MotorDetail = () => {
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" />
+     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -166,7 +218,7 @@ const MotorDetail = () => {
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" />
+     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
     </Box>
     <Box
       component="form"
@@ -175,7 +227,7 @@ const MotorDetail = () => {
       autoComplete="off"
       
     >
-     <TextField id="standard-basic" label="Name" variant="standard" />
+     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
     </Box>
           </QuestionsLeft>
           <QuestionsRight>
@@ -412,6 +464,7 @@ const MotorDetail = () => {
       </CustomTabPanel>
     </Box>
 </TabOptions>
+       
        
        
     </div>

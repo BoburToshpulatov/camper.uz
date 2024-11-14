@@ -1,7 +1,11 @@
 import styled from "styled-components";
 import detailback from '../../assets/motor-cars/detail-backgroundimg.svg'
 import map from '../../assets/motor-cars/map.svg'
-
+import description1 from '../../assets/motor-cars/description1.svg'
+import description2 from '../../assets/motor-cars/description2.svg'
+import description3 from '../../assets/motor-cars/description3.svg'
+import description4 from '../../assets/motor-cars/description4.svg'
+import description5 from '../../assets/motor-cars/description5.svg'
 
 export const Container=styled.div`
 display: flex;
@@ -441,10 +445,10 @@ justify-content: center;
 align-items: center;
 background: #FAFAFA;
 gap: 20px;
-padding:30px  0px;
+padding:10px  0px 60px 0px;
 `
 export const CarDetailsLeft=styled.div`
-width: 580px;
+width: 560px;
 height: 340px;
 flex-shrink: 0;
 display: flex;
@@ -460,7 +464,7 @@ img{
 }
 `
 export const CarDetailsRight=styled.div`
-width: 550px;
+width: 570px;
 height: 340px;
 flex-shrink: 0;
 border-radius: 10px;
@@ -492,6 +496,7 @@ margin:10px 15px ;
 `
 export const CompanyLicenseLeft=styled.div`
 flex: 1;
+
 p{
     color: var(--text, #373737);
 font-family: Montserrat;
@@ -505,6 +510,7 @@ margin-top: -1px;
 `
 export const CompanyLicenseRight=styled.div`
 flex: 1;
+
 p{
     color: rgba(55, 55, 55, 0.80);
 font-family: Montserrat;
@@ -612,7 +618,6 @@ gap: 20px;
 export const NumberEmail=styled.div`
 width: 289px;
 height: 108px;
-border: 1px solid black;
 border-radius: 8px;
 background: #FFF;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
@@ -638,7 +643,6 @@ export const QuestionsRight=styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-border: 1px solid black;
 width: 450px;
 height: 430px;
 flex-shrink: 0;
@@ -654,4 +658,78 @@ font-style: normal;
 font-weight: 700;
 line-height: 130%; /* 31.2px */
 }
+`
+export const Description=styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+background-color:#FAFAFA;
+`
+export const DescriptionLeft=styled.div`
+display: flex;
+flex-direction: column;
+flex: 1;
+align-items: center;
+margin-top: -90px;
+h1{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-right: 375px;
+}
+p{
+    color: #373737;
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+width: 500px;
+height: 169px;
+flex-shrink: 0;
+margin-top: -5px;
+}
+`
+export const DescriptionRight=styled.div`
+height: 435px;
+flex: 1;
+background-image: url('${description1}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+`
+export const DescriptionRight1=styled.div`
+height: 435px;
+flex: 1;
+background-image: url('${description2}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+`
+export const DescriptionRight2=styled.div`
+height: 435px;
+flex: 1;
+background-image: url('${description3}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+`
+export const DescriptionRight3=styled.div`
+height: 435px;
+flex: 1;
+background-image: url('${description4}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+`
+export const DescriptionRight4=styled.div`
+height: 435px;
+flex: 1;
+background-image: url('${description5}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 `

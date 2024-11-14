@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrandStar, BrandStarV, Button, CarCollectionVmenu, MiniBox1, MiniBox2,  MiniBox2Container,  MiniBox2Container1,  MiniBox2Container2,  VMenucarBoxes } from './motor'
-
+import { BrandStarV, Button, CarCollectionVmenu, MiniBox1, MiniBox2,  MiniBox2Container,  MiniBox2Container1,  MiniBox2Container2,  VMenucarBoxes } from './motor'
+import { Link } from 'react-router-dom';
 import star from '../../assets/bx_bxs-star (1).svg'
 import { caravans } from './mock/mock';
 
@@ -11,6 +11,7 @@ const VMenuComponent = () => {
       <CarCollectionVmenu>
           {caravans.map((value, index) => {
                   return ( 
+                    <Link to={`/caravan-detail/${value.id}`} style={{textDecoration:'none'}}>      
   <VMenucarBoxes>
       <MiniBox1><img src={value.photo} alt="car-icon" /></MiniBox1>
       <MiniBox2>
@@ -32,7 +33,7 @@ const VMenuComponent = () => {
           </MiniBox2>
       
   </VMenucarBoxes>
-  
+  </Link>
   
   );
   })

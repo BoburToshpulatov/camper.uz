@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { BackgroundCaravan } from '../styled'
 import HMenuComponent from './hMenu'
 import VMenuComponent from './vMenu'
-import { BlueButton, BrandSelect, Button, CancelButton, CarCollectionSidebar, CheckboxInput, ClickButtons, Container, FromTo, FromToButton, FromToText, Hamburger, InputBox, Menu, MenuLeft, MenuRight, SelectButton, Sidebar } from '../../components/caravan/motor'
+import { BlueButton, Button, CancelButton, CarCollectionSidebar, ClickButtons, Container, FromTo, FromToButton, FromToText, Hamburger, InputBox, Menu, MenuLeft, MenuRight, SelectButton, Sidebar } from '../../components/caravan/motor'
 import hamburger from '../../assets/icon-park-outline_hamburger-button.svg'
 import vImg from "../../assets/vButton.svg"
 import hImg from "../../assets/hButton.svg"
@@ -85,7 +85,7 @@ const Caravan = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -109,7 +109,7 @@ const Caravan = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -132,7 +132,7 @@ const Caravan = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -156,7 +156,7 @@ const Caravan = () => {
   
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -180,7 +180,7 @@ const Caravan = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"

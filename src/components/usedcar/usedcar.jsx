@@ -6,7 +6,7 @@ import hImg from "../../assets/hButton.svg"
 import HMenuComponent from './hMenu'
 import VMenuComponent from './vMenu'
 import minicars from '../../assets/image.png'
-import { BlueButton, BrandSelect, Button, CancelButton, CarCollectionSidebar, CheckboxInput, ClickButtons, Container, FromTo, FromToButton, FromToText, Hamburger, InputBox, Menu, MenuLeft, MenuRight, SelectButton, Sidebar } from './motor'
+import { BlueButton, Button, CancelButton, CarCollectionSidebar,ClickButtons, Container, FromTo, FromToButton, FromToText, Hamburger, InputBox, Menu, MenuLeft, MenuRight, SelectButton, Sidebar } from './motor'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import top100Films from './top100Films';
@@ -83,7 +83,7 @@ const Usedcar = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -107,7 +107,7 @@ const Usedcar = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -130,7 +130,7 @@ const Usedcar = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -154,7 +154,7 @@ const Usedcar = () => {
   
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"
@@ -178,7 +178,7 @@ const Usedcar = () => {
 
   <InputBox>
   
-  <Accordion>
+  <Accordion defaultExpanded={true}>
         <AccordionSummary
           expandIcon={<ArrowDropDownIcon />}
           aria-controls="panel2-content"

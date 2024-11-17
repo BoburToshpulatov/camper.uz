@@ -16,7 +16,7 @@ export const caravans = [
         id: 1,
         photo: `${img}`,
         name: "Adventure Compact", 
-        company: "Seoul Camping Caravans", 
+        company: "Seoul Camping", 
         star_rate: 4.2, 
         cost_krw: 120000,
         people: 102500, // Number of people: 102,500
@@ -96,7 +96,7 @@ export const caravans = [
         id: 9,
         photo: `${img8}`,
         name: "Forest Dweller", 
-        company: "Seoul Camping Caravans", 
+        company: "Seoul Camping", 
         star_rate: 4.4, 
         cost_krw: 140000,
         people: 102500, // Number of people: 102,500
@@ -176,7 +176,7 @@ export const caravans = [
         id: 17,
         photo: `${img6}`,
         name: "Alpine Trek", 
-        company: "Seoul Camping Caravans", 
+        company: "Seoul Camping", 
         star_rate: 4.1, 
         cost_krw: 135000,
         people: 90000, // Number of people: 90,000
@@ -256,7 +256,7 @@ export const caravans = [
         id: 25,
         photo: `${img4}`,
         name: "Snowy Cabin", 
-        company: "Seoul Camping Caravans", 
+        company: "Seoul Camping", 
         star_rate: 4.3, 
         cost_krw: 140000,
         people: 85000, // Number of people: 85,000
@@ -336,7 +336,7 @@ export const caravans = [
             id: 33,
             photo: `${img2}`,
             name: "Starry Nights", 
-            company: "Seoul Camping Caravans", 
+            company: "Seoul Camping", 
             star_rate: 4.9, 
             cost_krw: 200000,
             people: 150000, // Number of people: 150,000

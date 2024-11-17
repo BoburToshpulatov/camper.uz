@@ -14,9 +14,9 @@ export const usedVehicles = [
         car: {
             photo: `${img}`, 
             name: "Eco Caravan Compact", 
-            company: "Seoul Camper-Caravans", 
+            company: "Seoul New Caravans", 
             rate: 3.8, 
-            cost: "90000 KRW", 
+            cost: "90000 ", 
             people: 3200009, // Unique identifier for people
             license: "B-class", 
             date: "2024-11-01"
@@ -29,7 +29,7 @@ export const usedVehicles = [
             name: "Trail Blazer Motor", 
             company: "Han-Li River Motors", 
             rate: 4.0, 
-            cost: "130000 KRW", 
+            cost: "130000 ", 
             people: 8908093, 
             license: "A-class", 
             date: "2024-10-25"
@@ -40,9 +40,9 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Family Adventure", 
-            company: "Busan Camper-Motors", 
+            company: "Busan Best Motors", 
             rate: 4.1, 
-            cost: "120000 KRW", 
+            cost: "120000 ", 
             people: 10304056, 
             license: "B-class", 
             date: "2024-10-28"
@@ -55,7 +55,7 @@ export const usedVehicles = [
             name: "Urban Explorer", 
             company: "Jeju Caravan Rentals", 
             rate: 3.7, 
-            cost: "85000 KRW", 
+            cost: "85000 ", 
             people: 12098765, 
             license: "C-class", 
             date: "2024-11-03"
@@ -68,7 +68,7 @@ export const usedVehicles = [
             name: "Sunset Rider", 
             company: "Seaside Car Motors", 
             rate: 4.3, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 5321967, 
             license: "A-class", 
             date: "2024-11-01"
@@ -81,7 +81,7 @@ export const usedVehicles = [
             name: "Classic Camper", 
             company: "Gangnam Camping", 
             rate: 3.9, 
-            cost: "100000 KRW", 
+            cost: "100000 ", 
             people: 4211345, 
             license: "B-class", 
             date: "2024-09-22"
@@ -92,9 +92,9 @@ export const usedVehicles = [
         car: {
             photo: `${img6}`, 
             name: "Mountain Warrior", 
-            company: "Daegu Camp-Ventures", 
+            company: "Daegu Ventures", 
             rate: 4.2, 
-            cost: "115000 KRW", 
+            cost: "115000 ", 
             people: 8726432, 
             license: "A-class", 
             date: "2024-09-30"
@@ -107,7 +107,7 @@ export const usedVehicles = [
             name: "Adventure Traveler", 
             company: "Gyeonggi Nomads", 
             rate: 4.1, 
-            cost: "110000 KRW", 
+            cost: "110000 ", 
             people: 9943561, 
             license: "B-class", 
             date: "2024-11-05"
@@ -120,7 +120,7 @@ export const usedVehicles = [
             name: "Explorer Motor X", 
             company: "Korea Motorworks", 
             rate: 3.8, 
-            cost: "105000 KRW", 
+            cost: "105000 ", 
             people: 6592837, 
             license: "C-class", 
             date: "2024-11-02"
@@ -133,7 +133,7 @@ export const usedVehicles = [
             name: "Highway Comfort", 
             company: "Han-Li River Motors", 
             rate: 4.2, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 3847592, 
             license: "A-class", 
             date: "2024-10-30"
@@ -144,9 +144,9 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Compact Cruiser", 
-            company: "Seoul Camper-Caravans", 
+            company: "Seoul New Caravans", 
             rate: 3.9, 
-            cost: "95000 KRW", 
+            cost: "95000 ", 
             people: 8304920, 
             license: "B-class", 
             date: "2024-11-06"
@@ -159,7 +159,7 @@ export const usedVehicles = [
             name: "City Hopper Motor", 
             company: "Jeju Caravan Rentals", 
             rate: 3.6, 
-            cost: "80000 KRW", 
+            cost: "80000 ", 
             people: 6012839, 
             license: "C-class", 
             date: "2024-09-25"
@@ -170,9 +170,9 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Peak Rider", 
-            company: "Busan Camper-Motors", 
+            company: "Busan Best Motors", 
             rate: 4.0, 
-            cost: "115000 KRW", 
+            cost: "115000 ", 
             people: 7391053, 
             license: "B-class", 
             date: "2024-10-10"
@@ -185,7 +185,7 @@ export const usedVehicles = [
             name: "Green Nomad", 
             company: "Gyeonggi Nomads", 
             rate: 4.3, 
-            cost: "130000 KRW", 
+            cost: "130000 ", 
             people: 1203974, 
             license: "A-class", 
             date: "2024-09-18"
@@ -198,7 +198,7 @@ export const usedVehicles = [
             name: "Alpine Pro Motor", 
             company: "Seaside Car Motors", 
             rate: 4.1, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 8956710, 
             license: "B-class", 
             date: "2024-10-15"
@@ -211,7 +211,7 @@ export const usedVehicles = [
             name: "Coastal Cruiser", 
             company: "Gangnam Camping", 
             rate: 4.2, 
-            cost: "120000 KRW", 
+            cost: "120000 ", 
             people: 7241893, 
             license: "A-class", 
             date: "2024-11-03"
@@ -222,9 +222,9 @@ export const usedVehicles = [
         car: {
             photo: `${img}`, 
             name: "Retro Van", 
-            company: "Daegu Camp-Ventures", 
+            company: "Daegu Ventures", 
             rate: 3.7, 
-            cost: "90000 KRW", 
+            cost: "90000 ", 
             people: 5982304, 
             license: "C-class", 
             date: "2024-09-12"
@@ -237,7 +237,7 @@ export const usedVehicles = [
             name: "Nomad Lite", 
             company: "Korea Motorworks", 
             rate: 3.8, 
-            cost: "95000 KRW", 
+            cost: "95000 ", 
             people: 7638921, 
             license: "B-class", 
             date: "2024-10-02"
@@ -248,9 +248,9 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Starline Caravan", 
-            company: "Seoul Camper-Caravans", 
+            company: "Seoul New Caravans", 
             rate: 4.0, 
-            cost: "110000 KRW", 
+            cost: "110000 ", 
             people: 4789136, 
             license: "A-class", 
             date: "2024-11-10"
@@ -263,7 +263,7 @@ export const usedVehicles = [
             name: "Desert Rider", 
             company: "Han-Li River Motors", 
             rate: 4.3, 
-            cost: "130000 KRW", 
+            cost: "130000 ", 
             people: 8954321, 
             license: "B-class", 
             date: "2024-09-20"
@@ -274,9 +274,9 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Twilight Camper", 
-            company: "Busan Camper-Motors", 
+            company: "Busan Best Motors", 
             rate: 4.1, 
-            cost: "115000 KRW", 
+            cost: "115000 ", 
             people: 5136719, 
             license: "A-class", 
             date: "2024-10-11"
@@ -289,7 +289,7 @@ export const usedVehicles = [
             name: "Eco Explorer", 
             company: "Jeju Caravan Rentals", 
             rate: 3.6, 
-            cost: "85000 KRW", 
+            cost: "85000 ", 
             people: 8307593, 
             license: "B-class", 
             date: "2024-09-23"
@@ -302,7 +302,7 @@ export const usedVehicles = [
             name: "Mountain Explorer", 
             company: "Gyeonggi Nomads", 
             rate: 4.0, 
-            cost: "110000 KRW", 
+            cost: "110000 ", 
             people: 7428392, 
             license: "C-class", 
             date: "2024-10-08"
@@ -315,7 +315,7 @@ export const usedVehicles = [
             name: "Sunset Voyager", 
             company: "Seaside Car Motors", 
             rate: 4.2, 
-            cost: "120000 KRW", 
+            cost: "120000 ", 
             people: 3749126, 
             license: "A-class", 
             date: "2024-11-07"
@@ -328,7 +328,7 @@ export const usedVehicles = [
             name: "Desert Camper", 
             company: "Gangnam Camping", 
             rate: 3.8, 
-            cost: "95000 KRW", 
+            cost: "95000 ", 
             people: 6254937, 
             license: "B-class", 
             date: "2024-10-12"
@@ -339,9 +339,9 @@ export const usedVehicles = [
         car: {
             photo: `${img1}`, 
             name: "Nature Scout", 
-            company: "Daegu Camp-Ventures", 
+            company: "Daegu Ventures", 
             rate: 4.0, 
-            cost: "105000 KRW", 
+            cost: "105000 ", 
             people: 4135678, 
             license: "B-class", 
             date: "2024-10-05"
@@ -354,7 +354,7 @@ export const usedVehicles = [
             name: "Mountain Escape", 
             company: "Korea Motorworks", 
             rate: 4.2, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 5827364, 
             license: "A-class", 
             date: "2024-11-08"
@@ -365,9 +365,9 @@ export const usedVehicles = [
         car: {
             photo: `${img3}`, 
             name: "Urban Retreat", 
-            company: "Seoul Camper-Caravans", 
+            company: "Seoul New Caravans", 
             rate: 3.8, 
-            cost: "95000 KRW", 
+            cost: "95000 ", 
             people: 3276495, 
             license: "B-class", 
             date: "2024-09-26"
@@ -380,7 +380,7 @@ export const usedVehicles = [
             name: "Sunrise Motor", 
             company: "Han-Li River Motors", 
             rate: 4.3, 
-            cost: "130000 KRW", 
+            cost: "130000 ", 
             people: 4026581, 
             license: "C-class", 
             date: "2024-11-02"
@@ -391,9 +391,9 @@ export const usedVehicles = [
         car: {
             photo: `${img5}`, 
             name: "Beachside Camper", 
-            company: "Busan Camper-Motors", 
+            company: "Busan Best Motors", 
             rate: 4.1, 
-            cost: "115000 KRW", 
+            cost: "115000 ", 
             people: 1903472, 
             license: "A-class", 
             date: "2024-09-18"
@@ -406,7 +406,7 @@ export const usedVehicles = [
             name: "Wilderness Wagon", 
             company: "Jeju Caravan Rentals", 
             rate: 3.9, 
-            cost: "95000 KRW", 
+            cost: "95000 ", 
             people: 5601849, 
             license: "B-class", 
             date: "2024-09-15"
@@ -419,7 +419,7 @@ export const usedVehicles = [
             name: "Classic Trail", 
             company: "Gyeonggi Nomads", 
             rate: 4.0, 
-            cost: "110000 KRW", 
+            cost: "110000 ", 
             people: 7804691, 
             license: "A-class", 
             date: "2024-10-20"
@@ -432,7 +432,7 @@ export const usedVehicles = [
             name: "Rugged Journey", 
             company: "Seaside Car Motors", 
             rate: 4.2, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 6895072, 
             license: "B-class", 
             date: "2024-11-06"
@@ -445,7 +445,7 @@ export const usedVehicles = [
             name: "Explorer Series", 
             company: "Gangnam Camping", 
             rate: 4.1, 
-            cost: "115000 KRW", 
+            cost: "115000 ", 
             people: 3486729, 
             license: "C-class", 
             date: "2024-10-03"
@@ -456,9 +456,9 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Old Town Caravan", 
-            company: "Daegu Camp-Ventures", 
+            company: "Daegu Ventures", 
             rate: 3.7, 
-            cost: "85000 KRW", 
+            cost: "85000 ", 
             people: 1234896, 
             license: "B-class", 
             date: "2024-09-13"
@@ -471,7 +471,7 @@ export const usedVehicles = [
             name: "Freedom Motor", 
             company: "Korea Motorworks", 
             rate: 4.0, 
-            cost: "110000 KRW", 
+            cost: "110000 ", 
             people: 5408963, 
             license: "A-class", 
             date: "2024-11-04"
@@ -482,9 +482,9 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Globetrotter", 
-            company: "Seoul Camper-Caravans", 
+            company: "Seoul New Caravans", 
             rate: 4.3, 
-            cost: "130000 KRW", 
+            cost: "130000 ", 
             people: 8124091, 
             license: "C-class", 
             date: "2024-09-09"
@@ -497,7 +497,7 @@ export const usedVehicles = [
             name: "Eco Trek", 
             company: "Han-Li River Motors", 
             rate: 4.1, 
-            cost: "120000 KRW", 
+            cost: "120000 ", 
             people: 2104983, 
             license: "B-class", 
             date: "2024-09-19"
@@ -508,9 +508,9 @@ export const usedVehicles = [
         car: {
             photo: `${img6}`, 
             name: "Summit Camper", 
-            company: "Busan Camper-Motors", 
+            company: "Busan Best Motors", 
             rate: 4.2, 
-            cost: "125000 KRW", 
+            cost: "125000 ", 
             people: 1245674, 
             license: "A-class", 
             date: "2024-11-09"
@@ -523,7 +523,7 @@ export const usedVehicles = [
             name: "Nature's Choice", 
             company: "Jeju Caravan Rentals", 
             rate: 3.9, 
-            cost: "100000 KRW", 
+            cost: "100000 ", 
             people: 3456778, 
             license: "B-class", 
             date: "2024-11-10"

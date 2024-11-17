@@ -14,6 +14,7 @@ justify-content: center;
 align-items: center;
 background-color:    #FAFAFA; 
 gap: 35px;
+padding-bottom: 50px;
 @media only screen and (max-width:680px) {
   gap: 90px;
     }
@@ -308,6 +309,22 @@ display: flex;
 align-items: center;
 margin-top: -10px;
 margin-left: 10px;
+margin-right: 10px;
+justify-content: space-between;
+p{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+`
+export const BrandStarPimg=styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
 p{
     color: var(--text, #373737);
 font-family: Montserrat;

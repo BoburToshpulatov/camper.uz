@@ -80,7 +80,7 @@ const CaravanDetailNew = () => {
             <p>People</p>
             <p>License type</p>
           </CompanyLicenseLeft>
-          <CompanyLicenseRight style={{gap:'15px'}}>
+          <CompanyLicenseRight >
             <p>{dataById.company}</p>
             <p>{dataById.people}</p>
             <p>{dataById.license}</p>
@@ -181,7 +181,7 @@ All our vans are equipped with an electric step.</p>
                 </ItemReviewInformation>
                 );
             })
-        };
+        }
     
         </ItemReview>
       </CustomTabPanel>

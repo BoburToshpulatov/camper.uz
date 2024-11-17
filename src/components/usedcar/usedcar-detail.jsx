@@ -179,9 +179,9 @@ All our vans are equipped with an electric step.</p>
                     <p>Viewed: <span style={{color:'#373737'}}>{value.car.cost}</span></p>
                   </Infbox3>
                 </ItemReviewInformation>
-                );
+                )
             })
-        };
+        }
     
         </ItemReview>
       </CustomTabPanel>

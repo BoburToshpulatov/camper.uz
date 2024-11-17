@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { useParams } from 'react-router-dom'
 import { Best, CarDetails, CarDetailsLeft, CarDetailsRight, CompanyLicense, CompanyLicenseLeft, CompanyLicenseRight, Description, DescriptionLeft, DescriptionRight, DescriptionRight1, DescriptionRight2, DescriptionRight3, DescriptionRight4, DetailBackground, Infbox1, Infbox2, Infbox3, ItemReview, ItemReviewInformation, NumberEmail, Questions, QuestionsLeft, QuestionsLeftBottom, QuestionsLeftTop, QuestionsRight, RightNamePrice, TabOptions } from './motor';
 import Stack from '@mui/material/Stack';
@@ -182,7 +181,7 @@ All our vans are equipped with an electric step.</p>
                 </ItemReviewInformation>
                 );
             })
-        };
+        }
     
         </ItemReview>
       </CustomTabPanel>

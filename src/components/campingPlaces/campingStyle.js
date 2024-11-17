@@ -40,6 +40,7 @@ gap: 15px;
 justify-content: center;
 background-color: #FAFAFA;
 padding-top: 80px;
+padding-bottom: 30px;
 `
 export const SitesBox=styled.div`
 padding-bottom: 15px;

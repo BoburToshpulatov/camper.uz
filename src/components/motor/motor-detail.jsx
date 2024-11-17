@@ -66,6 +66,7 @@ const MotorDetail = () => {
       <Button style={{width:'150px',border:'1.5px solid white',color:'white'}} variant="outlined">COMPARE</Button>
        </Stack>
         </DetailBackground>
+        
 
         <CarDetails>
         <CarDetailsLeft><img src={dataById.car.photo} alt="" /></CarDetailsLeft>
@@ -181,7 +182,7 @@ All our vans are equipped with an electric step.</p>
                 </ItemReviewInformation>
                 );
             })
-        };
+        }
     
         </ItemReview>
       </CustomTabPanel>

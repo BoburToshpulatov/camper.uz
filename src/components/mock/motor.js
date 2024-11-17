@@ -1331,35 +1331,5 @@ export const motordata = [
     //photo3: `${insidecamp2}`,
     //photo4: `${easyaccess}`,
     //photo5: `${heating}`,
-  },
-  {
-    id: 96,
-    car: {
-     photo: `${img8}`,
-      name: "DS9eR+a",
-      cost: "139,000,000",
-      type: "피아트 듀카토",
-      license: "1종 보통",
-      people: "5인",
-      date: "22년 03월",
-      company: "모터홈코리아",
-      location: "수도권",
-      rate: 4.6,
-      word: "Sometimes camping is just surviving the wilderness for a  night or two with your loved ones, so that you can get back home and finally, now that you’re safe and sound again, laugh about how much nature kicked your butt. Because if we’ve learned anything through our years of outdoor adventure, nature always, always wins. And as any Boy Scout will tell you, the best thing you can do is to be prepared!",
-      word1:
-        "It’s fairly self-explanatory but when you hear the term car camping, it generally means that you are camping (i.e. sleeping in a tent) but have your car nearby to hold your belongings or run to in case of an emergency (yes, we’ve made a mad dash to our car in the middle of the night when we heard a bear rummaging near our tent!). Car camping is not only the most popular form of camping,but is also the best way to break into the world of camping.",
-      word2:
-        "As the name implies, it entails, you guessed it, camping at a campground. You will have a designated site with a fire ring, tent pad, picnic table, and parking spot. There will also likely be other amenities at the campground including, bathrooms with running water, a communal sink for dishes, a camp store selling basic supplies, or even laundry/shower facilities. ",
-      word3:
-        "Importantly, you will need to pay to stay at a campground, and while some campgrounds are first-come, first-served, most require reservations well in advance, especially if you want to camp in a national park. ",
-      word4:
-        "Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.",
-    },
-    //   //photo: `${camp}`,
-    //   //photo1: `${insidecamp}`,
-    //   //photo2: `${insidecamp1}`,
-    //   //photo3: `${insidecamp2}`,
-    //   //photo4: `${easyaccess}`,
-    //   //photo5: `${heating}`,
-  },
+  }
 ];

@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel'
 import caruselimg from "../../assets/camperlogoimg.svg"
 import caruselimg1 from "../../assets/camperlogoimg/carousel1.png"
 import caruselimg2 from "../../assets/camperlogoimg/carousel2.png"
-import { BackgroundImgMini, BackgroundImgMini2, BackgroundImgMini3, BackgroundImgMini4, BackgroundImgMini5, BackgroundImgMini6, Blog, MainContainerImages, MainContainerImagesLeft, MainContainerImagesLeft2, MainContainerImagesRight, Recommend, VideoBoxes, VideoBoxes2, VideoBoxes3, VideoBoxes4, VideoBoxes5, VideoBoxes6, VideoBoxes7, VideoBoxes8, VideoContainer, Videos } from './CamperStylelogo'
+import { BackgroundImgMini, BackgroundImgMini2, BackgroundImgMini3, BackgroundImgMini4, BackgroundImgMini5, BackgroundImgMini6, Blog, Iframebox, IframeBoxMain, MainContainerImages, MainContainerImagesLeft, MainContainerImagesLeft2, MainContainerImagesRight, Recommend, VideoBoxes, VideoBoxes2, VideoBoxes3, VideoBoxes4, VideoBoxes5, VideoBoxes6, VideoBoxes7, VideoBoxes8, VideoContainer, Videos } from './CamperStylelogo'
 import playbtn from '../../assets/camperlogoimg/Ellipse 5 (1).svg'
 import playbtn2 from '../../assets/camperlogoimg/play.svg'
 import Box from '@mui/material/Box';
@@ -100,14 +100,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px",border:'none' }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-575px'}} id="modal-modal-title" variant="h6" component="h2">
         DS9eR+a
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe   width="560" height="320" src="https://www.youtube.com/embed/9NpSU-j6eV8?si=mQsaMuR_I8dxFYoS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe'   height="320" src="https://www.youtube.com/embed/9NpSU-j6eV8?si=mQsaMuR_I8dxFYoS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
     
       
@@ -122,14 +122,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-         <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+         <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-545px'}} id="modal-modal-title" variant="h6" component="h2">
         위드원모터스
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe width="560" height="320" src="https://www.youtube.com/embed/WwPyPlX0hJA?si=gpDo9rfH1tYk_Rx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe' height="320" src="https://www.youtube.com/embed/WwPyPlX0hJA?si=gpDo9rfH1tYk_Rx0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
 
       <VideoBoxes3 onClick={handleOpen2}>
@@ -142,14 +142,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-520px'}} id="modal-modal-title" variant="h6" component="h2">
         르벤투스 차박S
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe  width="560" height="320" src="https://www.youtube.com/embed/sThvM5wfCOQ?si=pZ3UhQUBQENTjBGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe'  height="320" src="https://www.youtube.com/embed/sThvM5wfCOQ?si=pZ3UhQUBQENTjBGr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
      
        <VideoBoxes4 onClick={handleOpen3}>
@@ -162,14 +162,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-600px'}} id="modal-modal-title" variant="h6" component="h2">
         Result
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe width="560" height="320" src="https://www.youtube.com/embed/yAR9jn47CIo?si=E0sigxpqJ9RkMqWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe' height="320" src="https://www.youtube.com/embed/yAR9jn47CIo?si=E0sigxpqJ9RkMqWp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
       
        <VideoBoxes5 onClick={handleOpen4}>
@@ -182,14 +182,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-520px'}} id="modal-modal-title" variant="h6" component="h2">
         트레블라인 550
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe width="560" height="320" src="https://www.youtube.com/embed/1KCsqaZEohU?si=xm1uPHiPH7Gpnj6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe' height="320" src="https://www.youtube.com/embed/1KCsqaZEohU?si=xm1uPHiPH7Gpnj6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
       
        <VideoBoxes6 onClick={handleOpen5}>
@@ -202,14 +202,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-563px'}} id="modal-modal-title" variant="h6" component="h2">
         미스터캠퍼
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe  width="560" height="320" src="https://www.youtube.com/embed/yAR9jn47CIo?si=hP9rz2ug6igX2QMJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe'  height="320" src="https://www.youtube.com/embed/yAR9jn47CIo?si=hP9rz2ug6igX2QMJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
       
       <VideoBoxes7 onClick={handleOpen6}>
@@ -222,14 +222,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-605px'}} id="modal-modal-title" variant="h6" component="h2">
         Azure
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe width="560" height="320" src="https://www.youtube.com/embed/IdoCvQTlU28?si=kjdXKoQxwroOuE4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe'  height="320" src="https://www.youtube.com/embed/IdoCvQTlU28?si=kjdXKoQxwroOuE4N" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
       
       <VideoBoxes8 onClick={handleOpen7}>
@@ -242,14 +242,14 @@ export const CamperLogo = () => {
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
       >
-        <Box sx={{...style,borderRadius:'15px',background:'#FFF',width:"540px" ,height:"330px" }} >
-        <Typography sx={{marginBottom:'10px',marginTop:'-25px',marginLeft:'-10px'}} id="modal-modal-title" variant="h6" component="h2">
+        <IframeBoxMain className='iframeBoxMain' style={{...style,borderRadius:'15px',background:'#FFF',border:'none' }} >
+        <Typography className='typography' sx={{marginTop:'-15px',marginLeft:'-553px'}} id="modal-modal-title" variant="h6" component="h2">
         HWC620DL
     </Typography>
-    <Box sx={{marginLeft:'-10px'}}>
-    <iframe  width="560" height="320" src="https://www.youtube.com/embed/jUE8zKpLsic?si=joV3BEXoWLIGdctk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </Box>
-        </Box>
+    <Iframebox>
+    <iframe className='iframe'  height="320" src="https://www.youtube.com/embed/jUE8zKpLsic?si=joV3BEXoWLIGdctk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </Iframebox>
+        </IframeBoxMain>
       </Modal>
       
 </VideoContainer>

@@ -1,8 +1,9 @@
 import React from 'react'
-import { BrandStarV, Button, CarCollectionVmenu, MiniBox1, MiniBox2,  MiniBox2Container,  MiniBox2Container1,  MiniBox2Container2,  VMenucarBoxes } from './motor'
+import { BrandStarV, Button2, CarCollectionVmenu, MiniBox1, MiniBox2,  MiniBox2Container,  MiniBox2Container1,  MiniBox2Container2,  VMenucarBoxes } from './motor'
 import { Link } from 'react-router-dom';
 import star from '../../assets/bx_bxs-star (1).svg'
 import { caravans } from './mock/mock';
+
 
 
 const VMenuComponent = () => {
@@ -17,7 +18,7 @@ const VMenuComponent = () => {
       <MiniBox2>
           <MiniBox2Container>
           <h1>{value.name}</h1>
-         <h1 style={{fontSize:'20px',color: ' #006DAB'}}> {value.cost_krw }</h1>
+         <h1 style={{color: ' #006DAB'}}> {value.cost_krw }</h1>
          </MiniBox2Container>
          <MiniBox2Container1>
           <p>{value.company}</p>
@@ -27,8 +28,8 @@ const VMenuComponent = () => {
           </BrandStarV>
           </MiniBox2Container1>
           <MiniBox2Container2>
-          <Button style={{border: '1.5px solid var(--blue, #006DAB)', width: '253px' , height:'33px'}}>Order</Button>
-          <Button style={{border: '1.5px solid var(--blue, #006DAB)', width: '253px' , height:'33px'}}>Compare</Button>
+          <Button2>Order</Button2>
+          <Button2>Compare</Button2>
           </MiniBox2Container2>
           </MiniBox2>
       

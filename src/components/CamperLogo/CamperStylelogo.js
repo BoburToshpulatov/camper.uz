@@ -38,7 +38,7 @@ border-bottom: 2px solid #FF7A00;
 }
 
 @media only screen and (max-width: 590px) {
- margin-right: 235px;
+ margin-right: 241px;
 }
 `
 export const Blog =styled.div`
@@ -87,7 +87,7 @@ border-bottom: 2px solid #FF7A00;
     }
 }
 @media only screen and (max-width: 590px) {
- margin-right: 155px;
+ margin-right: 170px;
 }
 `
 export const VideoContainer=styled.div`
@@ -104,10 +104,38 @@ margin-top: 20px;
     grid-template-areas: 'a';
 }
 `
+export const IframeBoxMain=styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 2px;
+width: 700px;
+height: 375px;
+border: none;
+@media only screen and (max-width: 700px) {
+    width: 340px;
+    height: 320px;
+    .typography{
+        margin-left:0px;
+        margin-top: -5px;
+    }
+}
+`
+
+export const Iframebox=styled.div`
+.iframe{
+    width: 660px;
+    border-radius: 15px;
+    @media only screen and (max-width: 700px) {
+    width: 310px;
+    height: 270px;
+}
+}
+`
 export const VideoBoxes=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -124,7 +152,6 @@ align-items: center;
 export const VideoBoxes2=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -142,7 +169,6 @@ align-items: center;
 export const VideoBoxes3=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -160,7 +186,6 @@ align-items: center;
 export const VideoBoxes4=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -178,7 +203,6 @@ align-items: center;
 export const VideoBoxes5=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -196,7 +220,6 @@ align-items: center;
 export const VideoBoxes6=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -214,7 +237,6 @@ align-items: center;
 export const VideoBoxes7=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -232,7 +254,6 @@ align-items: center;
 export const VideoBoxes8=styled.div`
 width: 265px;
 height: 265px;
-flex-shrink: 0;
 border-radius: 20px;
 background-position: center;
 background-size: cover;
@@ -258,7 +279,6 @@ gap: 8px;
 img{
     width: 290px;
 height: 167px;
-flex-shrink: 0;
 }
 h1{
     color: var(--text, #373737);
@@ -342,7 +362,6 @@ font-weight: 400;
 line-height: normal;
 width: 380px;
 height: 124px;
-flex-shrink: 0;
 }
 @media only screen and (max-width: 1115px) {
 display: none;
@@ -374,7 +393,6 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 width: 530px;
-flex-shrink: 0;
 margin-top: -6px;
 }
 @media only screen and (max-width: 1115px) {
@@ -405,7 +423,6 @@ gap: 7px;
 export const BackgroundImgMini=styled.div`
 width: 245px;
 height: 245px;
-flex-shrink: 0;
 background-image: url('${minimg1}');
 background-position: center;
 background-repeat: no-repeat;
@@ -422,7 +439,6 @@ background-size: cover;
 export const BackgroundImgMini2=styled.div`
 width: 240px;
 height: 240px;
-flex-shrink: 0;
 background-image: url('${minimg2}');
 background-position: center;
 background-repeat: no-repeat;
@@ -439,7 +455,6 @@ background-size: cover;
 export const BackgroundImgMini3=styled.div`
 width: 240px;
 height: 240px;
-flex-shrink: 0;
 background-image: url('${minimg3}');
 background-position: center;
 background-repeat: no-repeat;
@@ -456,7 +471,6 @@ background-size: cover;
 export const BackgroundImgMini4=styled.div`
 width: 240px;
 height: 240px;
-flex-shrink: 0;
 background-image: url('${minimg4}');
 background-position: center;
 background-repeat: no-repeat;
@@ -473,7 +487,6 @@ background-size: cover;
 export const BackgroundImgMini5=styled.div`
 width: 240px;
 height: 240px;
-flex-shrink: 0;
 background-image: url('${minimg5}');
 background-position: center;
 background-repeat: no-repeat;
@@ -490,7 +503,6 @@ background-size: cover;
 export const BackgroundImgMini6=styled.div`
 width: 240px;
 height: 240px;
-flex-shrink: 0;
 background-image: url('${minimg6}');
 background-position: center;
 background-repeat: no-repeat;
@@ -502,5 +514,155 @@ background-size: cover;
 @media only screen and (max-width: 590px) {
     width:325px;
     height: 325px;
+}
+`
+export const SigninMain=styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+height: 600px;
+background: #FAFAFA;
+`
+export const SigninBox=styled.div`
+width: 400px;
+height: 510px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+padding: 25px 30px;
+h1{
+    color: var(--text, #373737);
+font-family: "Open Sans";
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: -4px;
+}
+p{
+    color: rgba(55, 55, 55, 0.80);
+font-family: "Open Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin-left: 8px;
+margin-top: 20px;
+}
+input{
+height: 50px;
+width: 382px;
+border-radius: 10px;
+background: rgba(55, 55, 55, 0.10);
+color: rgba(55, 55, 55, 0.70);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 14px */
+border: none;
+padding-left:15px ;
+margin-top: -8px;
+    }
+    .inputCheckbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .inputlabel{
+            display: flex;
+            align-items: center;
+            label{
+                color: #373737;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+            }
+        }
+        .Forget{
+            display: flex;
+            align-items: center;
+            p{
+                color: #373737;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: 15px;
+            }
+        }
+    }
+    .ButtonMui{
+        width: 400px;
+        height: 45px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+`
+export const SocialMedia=styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+.Account{
+    border-radius: 10px;
+border: 2px solid var(--blue, #006DAB);
+height: 45px;
+color: var(--blue, #006DAB);
+font-family: "Open Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 30px;
+width: 400px;
+}
+`
+export const Divider = styled.div`
+color: #6D6D6D;
+font-family: "Open Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+margin: 20px 30px;
+position: relative;
+text-transform: uppercase;
+text-align: center;
+&:before,
+&:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 43%;
+  height: 1px;
+  background-color: #ddd;
+}
+&:before {
+  left: 0;
+}
+&:after {
+  right: 0;
+}
+`
+export const SocialMediaIcons=styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+margin-top: 5px;
+
+button{
+    width: 46px;
+height: 46px;
+flex-shrink: 0;
+border-radius:50%;
+background-color: #039600;
+display: flex;
+justify-content: center;
+align-items: center;
+border: none;
 }
 `

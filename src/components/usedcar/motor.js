@@ -16,7 +16,7 @@ align-items: center;
 background-color:    #FAFAFA; 
 gap: 35px;
 padding-bottom: 50px;
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:690px) {
   gap: 90px;
     }
 `
@@ -28,6 +28,9 @@ justify-content: center;
 height: 30px;
 gap: 30px;
 margin-top: 60px;
+@media only screen and (max-width:690px) {
+  margin-top: 30px;
+    }
 `
 export const MenuLeft=styled.div`
 display: flex;
@@ -55,35 +58,21 @@ display: flex;
 align-items: center;
 gap: 10px;
 padding-bottom: 12px;
-select{
-    width: 80px;
-height: 30px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid rgba(55, 55, 55, 0.30);
-color: rgba(55, 55, 55, 0.60);
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 100%; /* 14px */
-@media only screen and (max-width:680px) {
-   order: 4;
-    }
-}
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:690px) {
     display: grid;
     grid-template-areas: 'a a';
-    height: 80px;
+    height:85px;
     gap: 10px;
+    .autocomplete2{
+        order: 4;
     }
-
+    }
 `
 export const Hamburger=styled.div`
 display: flex;
 align-items: center;
 gap: 25px;
-margin-right: 215px;
+margin-right: 200px;
 h1{
     color: var(--text, #373737);
 font-family: Montserrat;
@@ -102,8 +91,9 @@ img{
 display: flex;
     }
 }
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:690px) {
    order: 1;
+   gap: 10px;
     }
 `
 export const SelectButton=styled.div`
@@ -118,21 +108,17 @@ font-style: normal;
 font-weight: 500;
 line-height: 100%; /* 16px */
 }
-select{
-    width: 227px;
-height: 30px;
-flex-shrink: 0;
-border-radius: 5px;
-border: 1px solid rgba(55, 55, 55, 0.30);
-color: rgba(55, 55, 55, 0.60);
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 100%; /* 14px */
+.autocomplete{
+    width: 255px;
+    @media only screen and (max-width:1125px) {
+        width: 210px;
+    }
 }
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:690px) {
    order: 3;
+   .autocomplete{
+    width: 180px;
+}
     }
 `
 export const ClickButtons=styled.div`
@@ -147,7 +133,7 @@ border-radius: 5px 0px 0px 5px;
 border: 1px solid rgba(55, 55, 55, 0.30);
 background-color: white;
 }
-@media only screen and (max-width:680px) {
+@media only screen and (max-width:690px) {
    order: 2;
     }
 `
@@ -163,7 +149,7 @@ width: 227px;
 flex-direction: column;
 flex-shrink: 0;
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1125px) {
     display: none;
 }
 `
@@ -196,6 +182,44 @@ font-size: 14px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+`
+export const Button1=styled.button`
+width: 81px;
+height: 32px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid rgba(55, 55, 55, 0.60);
+background-color: white;
+color: var(--blue, #006DAB);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+@media only screen and (max-width: 1125px) {
+    display: none;
+}
+`
+export const Button2=styled.button`
+width: 253px;
+height: 33px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1.5px solid #006DAB;
+background-color: white;
+color: var(--blue, #006DAB);
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+@media only screen and (max-width: 1125px) {
+    width: 175px;
+}
+@media only screen and (max-width: 690px) {
+    width: 95px;
+    height: 30px;
+}
 `
 export const FromToButton=styled.div`
 display: flex;
@@ -269,10 +293,10 @@ display: grid;
 grid-template-areas: 'a a a a';
 justify-content: center;
 gap: 17px;
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 1125px) {
     grid-template-areas: 'a a';
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 690px) {
     grid-template-areas: 'a';
 }
 `
@@ -303,6 +327,44 @@ font-weight: 600;
 line-height: normal;
 margin-left: 10px;
 }
+@media only screen and (max-width: 1125px) {
+   width: 314px;
+   height: 400px;
+   padding: 0px 5px;
+   img{
+    width: 250px;
+height: 210px;
+margin-left: 30px;
+   }
+   h1{
+    font-size: 18px;
+   }
+}
+@media only screen and (max-width: 690px) {
+    width: 330px;
+   height: 400px;
+   padding: 0px 15px;
+   img{
+    width: 270px;
+   }
+}
+
+`
+export const MuiButtons=styled.div`
+display: none;
+@media only screen and (max-width: 1125px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    .muibutton{
+        width: 140px;
+        height: 40px;
+        border-radius: 10px;
+        @media only screen and (max-width: 690px) {
+        width: 147px;
+        }
+    }
+}
 `
 
 export  const BrandStar=styled.div`
@@ -319,6 +381,11 @@ font-size: 11px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+}
+@media only screen and (max-width: 1125px) {
+    p{
+        font-size: 14px;
+    }
 }
 
 `
@@ -366,6 +433,13 @@ border-radius: 20px;
 background: #FFF;
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
 display: flex;
+@media only screen and (max-width:1125px) {
+    width: 665px;
+}
+@media only screen and (max-width:690px) {
+    width: 360px;
+    height: 140px;
+}
 `
 export const MiniBox1=styled.div`
 flex: 1;
@@ -377,27 +451,42 @@ img{
 height: 143.853px;
 flex-shrink: 0;
 }
+@media only screen and (max-width:690px) {
+   img{
+    width: 140px;
+    height: 120px;
+   }
+}
 `
 export const MiniBox2=styled.div`
 flex: 2;
 display: flex;
 flex-direction: column;
 padding: 0px 27px;
+@media only screen and (max-width:1125px) {
+    padding: 0px 7px;
+}
 `
 export const MiniBox2Container=styled.div`
 display: flex;
 justify-content: space-between;
-
+align-items: center;
 h1{
     color: var(--text, #373737);
 font-family: Montserrat;
-font-size: 16px;
+font-size: 18px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
 margin-bottom: -10px;
 margin-top: 30px;
 }
+@media only screen and (max-width:690px) {
+  h1{
+    font-size:13px;
+    margin-bottom: 0;
+  }
+  }
 `
 export const MiniBox2Container1=styled.div`
 display: flex;
@@ -411,12 +500,20 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 }
+@media only screen and (max-width:690px) {
+  p{
+    font-size:10px;
+  }
+}
 `
 export const MiniBox2Container2=styled.div`
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: 35px;
+@media only screen and (max-width:690px) {
+margin-top: 10px;
+}
 `
 export  const BrandStarV=styled.div`
 display: flex;

@@ -48,18 +48,18 @@ const Usedcar = () => {
     </Hamburger>
     <SelectButton>
       <label htmlFor="">Sort by</label>
-      <Autocomplete
+      <Autocomplete className='autocomplete'
       disablePortal
       options={top100Films}
-      sx={{ width: 255 ,height: 45}}
+      sx={{height: 45}}
       size='small'
       renderInput={(params) => <TextField {...params} label="Company"  />}
     />
      </SelectButton>
-     <Autocomplete
+     <Autocomplete className='autocomplete2'
       disablePortal
       options={Numbers}
-      sx={{ width: 85 ,height: 45}}
+      sx={{ width: 100 ,height: 45}}
       size='small'
       renderInput={(params) => <TextField {...params} label=""  />}
       /> 

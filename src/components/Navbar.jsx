@@ -14,7 +14,7 @@ const Navbar = () => {
     <NavContainer>
     <Logodiv>
         <img src={hamburger} alt='img' />
-        <Link to="/" style={{textDecoration:'none'}}><h1>Camper</h1></Link>
+        <Link to="/camper-logo" style={{textDecoration:'none'}}><h1>Camper</h1></Link>
     </Logodiv>
     <Menu>
 <Link to='/motor' style={{textDecoration:'none'}}><p>Motor</p></Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
     </Menu>
     <Icons>
       <img src={cart} alt="cart-icon" />
-      <img className='user' src={user} alt="user-icon" />
+     <Link to='/' style={{textDecoration:'none'}}> <img className='user' src={user} alt="user-icon" /></Link>
   <Select><option>En</option></Select>
       <img className='hamburg' src={hamburger} alt="" />
     </Icons>

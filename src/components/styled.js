@@ -17,9 +17,9 @@ padding: 5px 0px;
 `
 export const Logodiv = styled.div`
 display: flex;
-align-items: center;
 justify-content: center;
 gap: 8px;
+margin-top: -5px;
 img{
     display: none;
     @media only screen and (max-width: 990px) {
@@ -32,7 +32,7 @@ img{
 h1{
     color: var(--blue, #006DAB);
 font-family: Montserrat;
-font-size: 36px;
+font-size: 44px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
@@ -47,11 +47,10 @@ margin-left: 50px;
 p{
     color: var(--text, #373737);
 font-family: Montserrat;
-font-size: 14px;
+font-size: 18px;
 font-style: normal;
 font-weight: 550;
 line-height: normal;
-
 }
 
 @media only screen and (max-width: 990px) {
@@ -62,7 +61,7 @@ export const Select = styled.select`
 border: none;
 color: var(--text, #373737);
 font-family: Montserrat;
-font-size: 14px;
+font-size: 18px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
@@ -72,6 +71,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 gap: 10px;
+margin-top: 3px;
 .hamburg{
     display: none;
     @media only screen and (max-width: 550px) {

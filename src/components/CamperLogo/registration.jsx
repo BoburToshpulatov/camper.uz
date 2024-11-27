@@ -9,7 +9,7 @@ const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 const RegistrationComponent = () => {
   return (
     <SigninMain>
-    <SigninBox style={{height:'450px'}}>
+    <SigninBox style={{height:'460px'}}>
         <h1>Registrate</h1>
         <p>Email</p>
         <input type="email" name="user_email" placeholder='Your email' />

@@ -15,6 +15,8 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { tuning } from './mock/mock';
+import  { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -57,6 +59,28 @@ const TuningDetail = () => {
   };
     let{id} = useParams();
     const dataById=tuning.find((data)=>data.id===parseInt(id));
+
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_ov5mo1m', 'template_sgdiop5', form.current, {
+          publicKey: 'zPaYteMHCq7iZFFy1',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            alert('Email muvaffaqiyatli yuborildi!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            alert("Email yuborishda xatolik yuz berdi. Iltimos qaytadan urinib koring: ${error.text || 'nomalum xato'}");
+          },
+        );
+    };
   return (
     <div>
         <DetailBackground>
@@ -232,39 +256,12 @@ All our vans are equipped with an electric step.</p>
           </QuestionsLeft>
           <QuestionsRight>
             <h1>Send a question</h1>
-            <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your name" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your email" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& .MuiTextField-root': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-    >
-       <TextField
-          id="filled-multiline-static"
-          label="Your question"
-          multiline
-          rows={4}
-          variant="filled"
-        />
-        </Box>
-        <Button style={{width:'373px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+            <form className='form' ref={form} onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder='Your name' />
+      <input type="email" name="user_email" placeholder='Your email' />
+      <textarea name="message" placeholder='Your question'/>
+      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+    </form>
           </QuestionsRight>
         </Questions>
       </CustomTabPanel>
@@ -372,39 +369,12 @@ All our vans are equipped with an electric step.</p>
           </QuestionsLeft>
           <QuestionsRight>
             <h1>Have you got a question?</h1>
-            <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your name" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your email" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& .MuiTextField-root': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-    >
-       <TextField
-          id="filled-multiline-static"
-          label="Your question"
-          multiline
-          rows={4}
-          variant="filled"
-        />
-        </Box>
-        <Button style={{width:'373px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+            <form className='form' ref={form} onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder='Your name' />
+      <input type="email" name="user_email" placeholder='Your email' />
+      <textarea name="message" placeholder='Your question'/>
+      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+    </form>
           </QuestionsRight>
         </Questions>
       </CustomTabPanel>
@@ -426,39 +396,12 @@ All our vans are equipped with an electric step.</p>
           </QuestionsLeft>
         <QuestionsRight>
             <h1>Have you got a question?</h1>
-            <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your name" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& > :not(style)': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-      size='small'
-    >
-      <TextField id="filled-basic" label="Your email" variant="filled" />
-    </Box>
-    <Box
-      component="form"
-      sx={{ '& .MuiTextField-root': { m: 1, width: '43ch' } }}
-      noValidate
-      autoComplete="off"
-    >
-       <TextField
-          id="filled-multiline-static"
-          label="Your question"
-          multiline
-          rows={4}
-          variant="filled"
-        />
-        </Box>
-        <Button style={{width:'373px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+            <form className='form' ref={form} onSubmit={sendEmail}>
+      <input type="text" name="user_name" placeholder='Your name' />
+      <input type="email" name="user_email" placeholder='Your email' />
+      <textarea name="message" placeholder='Your question'/>
+      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+    </form>
           </QuestionsRight>
         </Questions>
       </CustomTabPanel>

@@ -19,6 +19,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
+import Popover from '@mui/material/Popover';
+
 
 const Tuning = () => {
   const [active, setActive] = useState(true)
@@ -28,6 +30,20 @@ const Tuning = () => {
   function handleVmenu(){
     setActive(false)
   }
+
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? 'simple-popover' : undefined;
   return (<div>
     <BackgroundTuning>
     <h3>Home / Tuning</h3>
@@ -42,7 +58,23 @@ const Tuning = () => {
 </MenuLeft>
 <MenuRight>
   <Hamburger>
-    <img src={hamburger} alt="hamburger-icon" />
+    <img src={hamburger} alt="hamburger-icon" onClick={handleClick}/>
+        <Popover 
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+        <Typography sx={{ p: 2 }}>
+        <MenuLeft>
+  <h1>Cost of car</h1>
+</MenuLeft>
+        </Typography>
+      </Popover>
     <h1>Item <span style={{color : '#006DAB'}}>25.156</span></h1>
     </Hamburger>
     <SelectButton>
@@ -203,8 +235,8 @@ const Tuning = () => {
     <BlueButton style={{background:'#FF7A00'}}>Cancel</BlueButton>
     <BlueButton>Search</BlueButton>
   </CancelButton>
-  <img style={{marginTop:'30px'}} src={minicars} alt="cars-icon" />
-  <BlueButton style={{marginTop:'15px',marginLeft:'117px'}}>Compare</BlueButton>
+  <img style={{marginTop:'30px',width:'261px'}} src={minicars} alt="cars-icon" />
+  <BlueButton style={{marginTop:'15px',marginLeft:'132px'}}>Compare</BlueButton>
 </Sidebar>
 { 
   active ?    <HMenuComponent/>: <VMenuComponent/>

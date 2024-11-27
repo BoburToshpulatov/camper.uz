@@ -13,6 +13,7 @@ import minimg3 from '../../assets/camperlogoimg/mini-img3.svg'
 import minimg4 from '../../assets/camperlogoimg/mini-img4.svg'
 import minimg5 from '../../assets/camperlogoimg/mini-img5.svg'
 import minimg6 from '../../assets/camperlogoimg/mini-img6.svg'
+import signinback from '../../assets/camperlogoimg/carousel2.png'
 
 
 
@@ -96,6 +97,7 @@ grid-template-areas: 'a a a a';
 gap: 15px;
 justify-content: center;
 margin-top: 20px;
+margin-inline: auto;
 
 @media only screen and (max-width: 1115px) {
     grid-template-areas: 'a a';
@@ -520,12 +522,16 @@ export const SigninMain=styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-height: 600px;
+height: 100vh;
 background: #FAFAFA;
+background-image: url('${signinback}');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 `
 export const SigninBox=styled.div`
-width: 400px;
-height: 510px;
+width: 452px;
+height: 520px;
 flex-shrink: 0;
 border-radius: 20px;
 background: #FFF;
@@ -552,7 +558,7 @@ margin-top: 20px;
 }
 input{
 height: 50px;
-width: 382px;
+width: 434px;
 border-radius: 10px;
 background: rgba(55, 55, 55, 0.10);
 color: rgba(55, 55, 55, 0.70);
@@ -591,15 +597,31 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-margin-top: 15px;
+margin-top: 14.3px;
             }
         }
     }
     .ButtonMui{
-        width: 400px;
-        height: 45px;
+        width: 453px;
+        height: 50px;
         border-radius: 10px;
         margin-top: 10px;
+        color: #FFF;
+font-family: "Open Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+    @media only screen and (max-width:515px) {
+        width: 325px;
+        input{
+            width: 306px;
+        }
+        .ButtonMui{
+            width: 325px;
+        }
+ 
     }
 `
 export const SocialMedia=styled.div`
@@ -609,7 +631,7 @@ justify-content: center;
 .Account{
     border-radius: 10px;
 border: 2px solid var(--blue, #006DAB);
-height: 45px;
+height: 50px;
 color: var(--blue, #006DAB);
 font-family: "Open Sans";
 font-size: 15px;
@@ -617,8 +639,11 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-top: 30px;
-width: 400px;
-}
+width: 452px; 
+@media only screen and (max-width:515px) {
+        width: 325px;
+      }
+    }
 `
 export const Divider = styled.div`
 color: #6D6D6D;
@@ -653,7 +678,7 @@ justify-content: center;
 align-items: center;
 gap: 10px;
 margin-top: 5px;
-
+margin-left: 3.5px;
 button{
     width: 46px;
 height: 46px;

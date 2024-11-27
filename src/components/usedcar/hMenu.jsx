@@ -27,8 +27,8 @@ const HMenuComponent = () => {
                     </BrandStar>
                     <Price><h1>{value.car.cost}</h1></Price>
                     <FromToButton style={{gap: '12px', justifyContent:'center'}}>
-                <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '87px'}}>Order</Button1>
-                <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '87px'}}>Compare</Button1>
+                <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '97px'}}>Order</Button1>
+                <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '97px'}}>Compare</Button1>
                 </FromToButton>
                 <MuiButtons>
                 <Stack spacing={2} direction="row">

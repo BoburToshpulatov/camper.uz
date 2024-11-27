@@ -40,7 +40,7 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Family Adventure", 
-            company: "Busan Best Motors", 
+            company: "Busan Super Motors", 
             rate: 4.1, 
             cost: "120000 ", 
             people: 10304056, 
@@ -92,7 +92,7 @@ export const usedVehicles = [
         car: {
             photo: `${img6}`, 
             name: "Mountain Warrior", 
-            company: "Daegu Ventures", 
+            company: "Daegu Car Ventures", 
             rate: 4.2, 
             cost: "115000 ", 
             people: 8726432, 
@@ -105,7 +105,7 @@ export const usedVehicles = [
         car: {
             photo: `${img7}`, 
             name: "Adventure Traveler", 
-            company: "Gyeonggi Nomads", 
+            company: "Gyeonggi Local Nomads", 
             rate: 4.1, 
             cost: "110000 ", 
             people: 9943561, 
@@ -118,7 +118,7 @@ export const usedVehicles = [
         car: {
             photo: `${img}`, 
             name: "Explorer Motor X", 
-            company: "Korea Motorworks", 
+            company: "Korea Best Motorworks", 
             rate: 3.8, 
             cost: "105000 ", 
             people: 6592837, 
@@ -170,7 +170,7 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Peak Rider", 
-            company: "Busan Best Motors", 
+            company: "Busan Super Motors", 
             rate: 4.0, 
             cost: "115000 ", 
             people: 7391053, 
@@ -183,7 +183,7 @@ export const usedVehicles = [
         car: {
             photo: `${img5}`, 
             name: "Green Nomad", 
-            company: "Gyeonggi Nomads", 
+            company: "Gyeonggi Local Nomads", 
             rate: 4.3, 
             cost: "130000 ", 
             people: 1203974, 
@@ -222,7 +222,7 @@ export const usedVehicles = [
         car: {
             photo: `${img}`, 
             name: "Retro Van", 
-            company: "Daegu Ventures", 
+            company: "Daegu Car Ventures", 
             rate: 3.7, 
             cost: "90000 ", 
             people: 5982304, 
@@ -235,7 +235,7 @@ export const usedVehicles = [
         car: {
             photo: `${img1}`, 
             name: "Nomad Lite", 
-            company: "Korea Motorworks", 
+            company: "Korea Best Motorworks", 
             rate: 3.8, 
             cost: "95000 ", 
             people: 7638921, 
@@ -274,7 +274,7 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Twilight Camper", 
-            company: "Busan Best Motors", 
+            company: "Busan Super Motors", 
             rate: 4.1, 
             cost: "115000 ", 
             people: 5136719, 
@@ -300,7 +300,7 @@ export const usedVehicles = [
         car: {
             photo: `${img6}`, 
             name: "Mountain Explorer", 
-            company: "Gyeonggi Nomads", 
+            company: "Gyeonggi Local Nomads", 
             rate: 4.0, 
             cost: "110000 ", 
             people: 7428392, 
@@ -339,7 +339,7 @@ export const usedVehicles = [
         car: {
             photo: `${img1}`, 
             name: "Nature Scout", 
-            company: "Daegu Ventures", 
+            company: "Daegu Car Ventures", 
             rate: 4.0, 
             cost: "105000 ", 
             people: 4135678, 
@@ -352,7 +352,7 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Mountain Escape", 
-            company: "Korea Motorworks", 
+            company: "Korea Best Motorworks", 
             rate: 4.2, 
             cost: "125000 ", 
             people: 5827364, 
@@ -391,7 +391,7 @@ export const usedVehicles = [
         car: {
             photo: `${img5}`, 
             name: "Beachside Camper", 
-            company: "Busan Best Motors", 
+            company: "Busan Super Motors", 
             rate: 4.1, 
             cost: "115000 ", 
             people: 1903472, 
@@ -417,7 +417,7 @@ export const usedVehicles = [
         car: {
             photo: `${img7}`, 
             name: "Classic Trail", 
-            company: "Gyeonggi Nomads", 
+            company: "Gyeonggi Local Nomads", 
             rate: 4.0, 
             cost: "110000 ", 
             people: 7804691, 
@@ -456,7 +456,7 @@ export const usedVehicles = [
         car: {
             photo: `${img2}`, 
             name: "Old Town Caravan", 
-            company: "Daegu Ventures", 
+            company: "Daegu Car Ventures", 
             rate: 3.7, 
             cost: "85000 ", 
             people: 1234896, 
@@ -469,7 +469,7 @@ export const usedVehicles = [
         car: {
             photo: `${img3}`, 
             name: "Freedom Motor", 
-            company: "Korea Motorworks", 
+            company: "Korea Best Motorworks", 
             rate: 4.0, 
             cost: "110000 ", 
             people: 5408963, 
@@ -508,7 +508,7 @@ export const usedVehicles = [
         car: {
             photo: `${img6}`, 
             name: "Summit Camper", 
-            company: "Busan Best Motors", 
+            company: "Busan Super Motors", 
             rate: 4.2, 
             cost: "125000 ", 
             people: 1245674, 

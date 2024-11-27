@@ -206,8 +206,8 @@ const Caravan = () => {
     <BlueButton style={{background:'#FF7A00'}}>Cancel</BlueButton>
     <BlueButton>Search</BlueButton>
   </CancelButton>
-  <img style={{marginTop:'30px'}} src={minicars} alt="cars-icon" />
-  <BlueButton style={{marginTop:'15px',marginLeft:'117px'}}>Compare</BlueButton>
+  <img style={{marginTop:'30px',width:'261px'}} src={minicars} alt="cars-icon" />
+  <BlueButton style={{marginTop:'15px',marginLeft:'132px'}}>Compare</BlueButton>
 </Sidebar>
 { 
   active ?    <HMenuComponent/>: <VMenuComponent/>

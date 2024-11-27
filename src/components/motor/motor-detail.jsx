@@ -74,9 +74,11 @@ const MotorDetail = () => {
         .then(
           () => {
             console.log('SUCCESS!');
+            alert('Email muvaffaqiyatli yuborildi!');
           },
           (error) => {
             console.log('FAILED...', error.text);
+            alert("Email yuborishda xatolik yuz berdi. Iltimos qaytadan urinib koring: ${error.text || 'nomalum xato'}");
           },
         );
     };
@@ -116,16 +118,16 @@ const MotorDetail = () => {
         <Description>
        <DescriptionLeft>
         <h1>Comfort</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. <span>Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</span></p>
         </DescriptionLeft> 
         <DescriptionRight></DescriptionRight>
        </Description>
 
-       <Description>
+        <Description>
         <DescriptionRight1></DescriptionRight1>
        <DescriptionLeft>
         <h1 style={{marginRight:'80px'}}>Tidying away is child’s play!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi. Turpis ac ut metus, amet, pulvinar. <span> Eget amet dictum luctus quis molestie tellus vitae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rutrum nibh urna sagittis arcu natoque lectus cursus felis. Nec, felis risus, id in proin sed proin iaculis mi.</span></p>
         </DescriptionLeft> 
        </Description>
 
@@ -134,7 +136,7 @@ const MotorDetail = () => {
         <h1 style={{marginRight:'229px'}}>Ventilated , Lit up</h1>
         <p>In our vans and motorhomes, all our body lighting is 100% LED: a guarantee of energy efficiency and durability. <br />
 As for ventilation, we also often offer double ventilation in the bathroom (Skylight + window), which is very popular with our customers… <br />
-Camper relies on legendary Seitz windows. They offer the best insulation and are also the easiest to use and safest because they can’t be removed from the outside.												
+<span>Camper relies on legendary Seitz windows. They offer the best insulation and are also the easiest to use and safest because they can’t be removed from the outside.	</span>											
 					</p>
         </DescriptionLeft> 
         <DescriptionRight2></DescriptionRight2>
@@ -156,9 +158,9 @@ All our vans are equipped with an electric step.</p>
         <p>Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. <br />
         One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.
 					</p>
-          <Stack style={{marginTop:'10px',marginRight:'180px'}} spacing={2} direction="row">
-      <Button style={{width:'150px'}} variant="contained">ADD TO CART</Button>
-      <Button style={{width:'150px',border:'1.5px solid'}} variant="outlined">COMPARE</Button>
+          <Stack style={{marginTop:'-15px',marginRight:'180px'}} spacing={2} direction="row">
+      <Button style={{width:'150px',borderRadius:'10px'}} variant="contained">ADD TO CART</Button>
+      <Button style={{width:'150px',border:'1.5px solid',borderRadius:'10px'}} variant="outlined">COMPARE</Button>
        </Stack>
         </DescriptionLeft> 
         <DescriptionRight4></DescriptionRight4>

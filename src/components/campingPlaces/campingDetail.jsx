@@ -1,19 +1,23 @@
 import React from 'react'
 import { campingPlaces } from './mock/placesmock';
 import { useParams } from 'react-router-dom';
-import { Description, DetailPage, DetailsText, Map, NumberTiLeft, NumberTime, NumberTimeRight } from './campingStyle';
+import { Description, DetailPage, DetailsText, MapContainer, NumberTiLeft, NumberTime, NumberTimeRight, Wrapper } from './campingStyle';
 import locationIcon from '../../assets/campingPlaces/carbon_location.svg'
 import phoneIcon from '../../assets/campingPlaces/carbon_phone.svg'
 import clockIcon from '../../assets/campingPlaces/bi_clock.svg'
 import websiteIcon from '../../assets/campingPlaces/codicon_home.svg'
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import KakaoMap from './map/map';
+
 
 
 const CampingDetail = () => {
     let{id} = useParams();
-    const dataById=campingPlaces.find((data)=>data.id===parseInt(id));
+    const dataById=campingPlaces.find((data)=>data.id===parseInt(id)); 
+
   return (
-    <div style={{background: '#FAFAFA',padding:'30px 65px'}}>
+    <div style={{background: '#FAFAFA',padding:'30px 50px'}}>
         <DetailPage>
         {campingPlaces.map((value, index) => {
                 return ( 
@@ -61,12 +65,14 @@ consectetur adipiscing elit. Sapien senectus feugiat in vitae consequat libero p
 bibendum. Maecenas mattis phasellus nunc sed a fringilla risus. Aenean sed fusce pretium sit venenatis bibendum convallis commodo enim.</p>
 </Description>
 
-<Map>
- <button style={{height:'46px',marginTop:'20px'}}>+</button>
- <button style={{marginTop:'-6px',borderTop:'1px solid rgba(55, 55, 55, 0.80)',borderRadius:'0px 0px 5px 5px'}}>-</button>
-</Map>
+
+<KakaoMap/>
+
     </div>
   )
 }
+
+
+
 
 export default CampingDetail

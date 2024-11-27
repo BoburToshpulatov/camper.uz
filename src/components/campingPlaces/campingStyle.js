@@ -32,7 +32,7 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 margin-top: -3px;
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1190px) {
    font-size: 60px;
 }
 @media only screen and (max-width: 765px) {
@@ -48,10 +48,10 @@ justify-content: center;
 background-color: #FAFAFA;
 padding-top: 80px;
 padding-bottom: 30px;
-@media only screen and (max-width: 1140px) {
+@media only screen and (max-width: 1210px) {
     grid-template-areas: 'a a';
 }
-@media only screen and (max-width: 765px) {
+@media only screen and (max-width: 810px) {
     grid-template-areas: 'a';
 }
 `
@@ -75,14 +75,14 @@ margin-top: -15px;
 }
 `
 export const SitesBackgroundImg = styled.div`
-width: 365px;
-height: 275px;
+width: 385px;
+height: 285px;
 flex-shrink: 0;
 border-radius: 10px;
 margin-bottom: -10px;
 img{
-    width: 365px;
-height: 275px;
+    width: 385px;
+height: 285px;
 flex-shrink: 0;
 border-radius: 10px;
 }
@@ -148,6 +148,10 @@ export const NumberTime=styled.div`
 display: flex;
 gap: 80px;
 margin-top: 10px;
+@media only screen and (max-width: 650px) {
+    flex-direction: column;
+    gap: 0;
+}
 `
 export const NumberTiLeft=styled.div`
 display: flex;
@@ -201,30 +205,63 @@ font-weight: 400;
 line-height: normal;
 }
 `
-export const Map=styled.div`
-background-image: url('${map}');
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 512px;
-margin-top: 50px;
-display: flex;
-flex-direction: column;
-align-items: flex-end;
-margin-right: -20px;
-button{
-    width: 35px;
-height: 40px;
-flex-shrink: 0;
-border-radius: 5px;
-background: #FFF;
-color: rgba(55, 55, 55, 0.80);
-font-family: Montserrat;
-font-size: 25px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-border: none;
-margin-right: 20px;
-}
-`
+
+export const Wrapper = styled.div`
+  display: flex;
+  gap: 50px;
+  margin: 50px 0;
+  width: 100%;
+  .map {
+    flex: 1;
+    height: 700px;
+    /* width: 400px;
+    height: 400px; */
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    height: 400px;
+  }
+  @media only screen and (max-width: 450px) {
+    display: flex;
+    height: 300px;
+  }
+`;
+
+ export const MapContainer = styled.div`
+  flex: 1;
+  border: 1px solid black;
+  height :500px ;
+  h1{
+    font-size: 28px;
+  }
+  .map {
+    flex: 1;
+    height: 500px;
+    /* width: 400px;
+    height: 400px; */
+    align-items: center;
+    justify-content: center;
+  }
+  @media only screen and (max-width: 900px) {
+    display: flex;
+    height: 400px;
+    .map{
+        height: 400px;
+    }
+    h1 {
+      margin: 0;
+      padding-bottom: 10px;
+      font-size: 23px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    height: 300px;
+    .map{
+        @media only screen and (max-width: 450px) {
+    height: 300px;
+  }
+    }
+  }
+`;

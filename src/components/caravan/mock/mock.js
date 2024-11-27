@@ -16,7 +16,7 @@ export const caravans = [
         id: 1,
         photo: `${img}`,
         name: "Adventure Compact", 
-        company: "Seoul Camping", 
+        company: "Seoul Camping Cars", 
         star_rate: 4.2, 
         cost_krw: 120000,
         people: 102500, // Number of people: 102,500
@@ -56,7 +56,7 @@ export const caravans = [
         id: 5,
         photo: `${img4}`,
         name: "Coastal Cruiser", 
-        company: "Seaside Caravans", 
+        company: "Seaside Motor Caravans", 
         star_rate: 4.9, 
         cost_krw: 200000,
         people: 102500, // Number of people: 102,500
@@ -76,7 +76,7 @@ export const caravans = [
         id: 7,
         photo: `${img6}`,
         name: "Mountain Explorer", 
-        company: "Daegu Ventures", 
+        company: "Daegu VAN Ventures", 
         star_rate: 4.3, 
         cost_krw: 145000,
         people: 125000, // Number of people: 125,000
@@ -96,7 +96,7 @@ export const caravans = [
         id: 9,
         photo: `${img8}`,
         name: "Forest Dweller", 
-        company: "Seoul Camping", 
+        company: "Seoul Camping Cars", 
         star_rate: 4.4, 
         cost_krw: 140000,
         people: 102500, // Number of people: 102,500
@@ -136,7 +136,7 @@ export const caravans = [
         id: 13,
         photo: `${img2}`,
         name: "Nomad Lite", 
-        company: "Seaside Caravans", 
+        company: "Seaside Motor Caravans", 
         star_rate: 3.9, 
         cost_krw: 95000,
         people: 75000, // Number of people: 75,000
@@ -156,7 +156,7 @@ export const caravans = [
         id: 15,
         photo: `${img4}`,
         name: "Seaside Suite", 
-        company: "Daegu Ventures", 
+        company: "Daegu VAN Ventures", 
         star_rate: 4.5, 
         cost_krw: 165000,
         people: 102500, // Number of people: 102,500
@@ -176,7 +176,7 @@ export const caravans = [
         id: 17,
         photo: `${img6}`,
         name: "Alpine Trek", 
-        company: "Seoul Camping", 
+        company: "Seoul Camping Cars", 
         star_rate: 4.1, 
         cost_krw: 135000,
         people: 90000, // Number of people: 90,000
@@ -216,7 +216,7 @@ export const caravans = [
         id: 21,
         photo: `${img}`,
         name: "Riverfront Delight", 
-        company: "Seaside Caravans", 
+        company: "Seaside Motor Caravans", 
         star_rate: 4.8, 
         cost_krw: 190000,
         people: 130000, // Number of people: 130,000
@@ -236,7 +236,7 @@ export const caravans = [
         id: 23,
         photo: `${img2}`,
         name: "Summit Suite", 
-        company: "Daegu Ventures", 
+        company: "Daegu VAN Ventures", 
         star_rate: 4.7, 
         cost_krw: 180000,
         people: 125000, // Number of people: 125,000
@@ -256,7 +256,7 @@ export const caravans = [
         id: 25,
         photo: `${img4}`,
         name: "Snowy Cabin", 
-        company: "Seoul Camping", 
+        company: "Seoul Camping Cars", 
         star_rate: 4.3, 
         cost_krw: 140000,
         people: 85000, // Number of people: 85,000
@@ -296,7 +296,7 @@ export const caravans = [
             id: 29,
             photo: `${img8}`,
             name: "Peak Adventure", 
-            company: "Seaside Caravans", 
+            company: "Seaside Motor Caravans", 
             star_rate: 4.6, 
             cost_krw: 175000,
             people: 125000, // Number of people: 125,000
@@ -316,7 +316,7 @@ export const caravans = [
             id: 31,
             photo: `${img}`,
             name: "Tranquil Trails", 
-            company: "Daegu Ventures", 
+            company: "Daegu VAN Ventures", 
             star_rate: 4.2, 
             cost_krw: 145000,
             people: 110000, // Number of people: 110,000
@@ -336,7 +336,7 @@ export const caravans = [
             id: 33,
             photo: `${img2}`,
             name: "Starry Nights", 
-            company: "Seoul Camping", 
+            company: "Seoul Camping Cars", 
             star_rate: 4.9, 
             cost_krw: 200000,
             people: 150000, // Number of people: 150,000
@@ -376,7 +376,7 @@ export const caravans = [
             id: 37,
             photo: `${img6}`,
             name: "Mountain Mirage", 
-            company: "Seaside Caravans", 
+            company: "Seaside Motor Caravans", 
             star_rate: 4.8, 
             cost_krw: 190000,
             people: 130000, // Number of people: 130,000
@@ -396,7 +396,7 @@ export const caravans = [
             id: 39,
             photo: `${img8}`,
             name: "Great Escape", 
-            company: "Daegu Ventures", 
+            company: "Daegu VAN Ventures", 
             star_rate: 4.7, 
             cost_krw: 180000,
             people: 125000, // Number of people: 125,000

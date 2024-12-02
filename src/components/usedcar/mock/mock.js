@@ -16,9 +16,10 @@ export const usedVehicles = [
             name: "Eco Caravan Compact", 
             company: "Seoul New Caravans", 
             rate: 3.8, 
-            cost: "90000 ", 
-            people: 3200009, // Unique identifier for people
+            cost: "90000", 
+            people: "4", 
             license: "B-class", 
+            location: "Seoul",
             date: "2024-11-01"
         }
     },
@@ -29,9 +30,10 @@ export const usedVehicles = [
             name: "Trail Blazer Motor", 
             company: "Han-Li River Motors", 
             rate: 4.0, 
-            cost: "130000 ", 
-            people: 8908093, 
+            cost: "130000", 
+            people: "5", 
             license: "A-class", 
+            location: "Busan",
             date: "2024-10-25"
         }
     },
@@ -42,9 +44,10 @@ export const usedVehicles = [
             name: "Family Adventure", 
             company: "Busan Super Motors", 
             rate: 4.1, 
-            cost: "120000 ", 
-            people: 10304056, 
+            cost: "120000", 
+            people: "3", 
             license: "B-class", 
+            location: "Jeju",
             date: "2024-10-28"
         }
     },
@@ -55,9 +58,10 @@ export const usedVehicles = [
             name: "Urban Explorer", 
             company: "Jeju Caravan Rentals", 
             rate: 3.7, 
-            cost: "85000 ", 
-            people: 12098765, 
+            cost: "85000", 
+            people: "6", 
             license: "C-class", 
+            location: "Daegu",
             date: "2024-11-03"
         }
     },
@@ -66,11 +70,12 @@ export const usedVehicles = [
         car: {
             photo: `${img4}`, 
             name: "Sunset Rider", 
-            company: "Seaside Car Motors", 
+            company: "Seoul New Caravans", 
             rate: 4.3, 
-            cost: "125000 ", 
-            people: 5321967, 
+            cost: "125000", 
+            people: "4", 
             license: "A-class", 
+            location: "Seoul",
             date: "2024-11-01"
         }
     },
@@ -81,9 +86,10 @@ export const usedVehicles = [
             name: "Classic Camper", 
             company: "Gangnam Camping", 
             rate: 3.9, 
-            cost: "100000 ", 
-            people: 4211345, 
+            cost: "100000", 
+            people: "3", 
             license: "B-class", 
+            location: "Incheon",
             date: "2024-09-22"
         }
     },
@@ -91,12 +97,13 @@ export const usedVehicles = [
         id: 7, 
         car: {
             photo: `${img6}`, 
-            name: "Mountain Warrior", 
+            name: "Trail Blazer Motor", 
             company: "Daegu Car Ventures", 
             rate: 4.2, 
-            cost: "115000 ", 
-            people: 8726432, 
+            cost: "115000", 
+            people: "5", 
             license: "A-class", 
+            location: "Busan",
             date: "2024-09-30"
         }
     },
@@ -104,12 +111,13 @@ export const usedVehicles = [
         id: 8, 
         car: {
             photo: `${img7}`, 
-            name: "Adventure Traveler", 
+            name: "Classic Camper", 
             company: "Gyeonggi Local Nomads", 
             rate: 4.1, 
-            cost: "110000 ", 
-            people: 9943561, 
+            cost: "110000", 
+            people: "6", 
             license: "B-class", 
+            location: "Jeju",
             date: "2024-11-05"
         }
     },
@@ -117,12 +125,13 @@ export const usedVehicles = [
         id: 9, 
         car: {
             photo: `${img}`, 
-            name: "Explorer Motor X", 
-            company: "Korea Best Motorworks", 
+            name: "Sunset Rider", 
+            company: "Han-Li River Motors", 
             rate: 3.8, 
-            cost: "105000 ", 
-            people: 6592837, 
+            cost: "105000", 
+            people: "3", 
             license: "C-class", 
+            location: "Incheon",
             date: "2024-11-02"
         }
     },
@@ -130,12 +139,13 @@ export const usedVehicles = [
         id: 10, 
         car: {
             photo: `${img1}`, 
-            name: "Highway Comfort", 
-            company: "Han-Li River Motors", 
+            name: "Family Adventure", 
+            company: "Busan Super Motors", 
             rate: 4.2, 
-            cost: "125000 ", 
-            people: 3847592, 
+            cost: "125000", 
+            people: "4", 
             license: "A-class", 
+            location: "Daegu",
             date: "2024-10-30"
         }
     },
@@ -143,12 +153,13 @@ export const usedVehicles = [
         id: 11, 
         car: {
             photo: `${img2}`, 
-            name: "Compact Cruiser", 
-            company: "Seoul New Caravans", 
+            name: "Eco Caravan Compact", 
+            company: "Jeju Caravan Rentals", 
             rate: 3.9, 
-            cost: "95000 ", 
-            people: 8304920, 
+            cost: "95000", 
+            people: "6", 
             license: "B-class", 
+            location: "Seoul",
             date: "2024-11-06"
         }
     },
@@ -156,12 +167,13 @@ export const usedVehicles = [
         id: 12, 
         car: {
             photo: `${img3}`, 
-            name: "City Hopper Motor", 
-            company: "Jeju Caravan Rentals", 
+            name: "Urban Explorer", 
+            company: "Seoul New Caravans", 
             rate: 3.6, 
-            cost: "80000 ", 
-            people: 6012839, 
+            cost: "80000", 
+            people: "3", 
             license: "C-class", 
+            location: "Busan",
             date: "2024-09-25"
         }
     },
@@ -169,12 +181,13 @@ export const usedVehicles = [
         id: 13, 
         car: {
             photo: `${img4}`, 
-            name: "Peak Rider", 
-            company: "Busan Super Motors", 
+            name: "Classic Camper", 
+            company: "Daegu Car Ventures", 
             rate: 4.0, 
-            cost: "115000 ", 
-            people: 7391053, 
+            cost: "115000", 
+            people: "5", 
             license: "B-class", 
+            location: "Jeju",
             date: "2024-10-10"
         }
     },
@@ -182,12 +195,13 @@ export const usedVehicles = [
         id: 14, 
         car: {
             photo: `${img5}`, 
-            name: "Green Nomad", 
+            name: "Eco Caravan Compact", 
             company: "Gyeonggi Local Nomads", 
             rate: 4.3, 
-            cost: "130000 ", 
-            people: 1203974, 
+            cost: "130000", 
+            people: "4", 
             license: "A-class", 
+            location: "Incheon",
             date: "2024-09-18"
         }
     },
@@ -195,12 +209,13 @@ export const usedVehicles = [
         id: 15, 
         car: {
             photo: `${img6}`, 
-            name: "Alpine Pro Motor", 
-            company: "Seaside Car Motors", 
+            name: "Trail Blazer Motor", 
+            company: "Seoul New Caravans", 
             rate: 4.1, 
-            cost: "125000 ", 
-            people: 8956710, 
+            cost: "125000", 
+            people: "6", 
             license: "B-class", 
+            location: "Seoul",
             date: "2024-10-15"
         }
     },
@@ -208,12 +223,13 @@ export const usedVehicles = [
         id: 16, 
         car: {
             photo: `${img7}`, 
-            name: "Coastal Cruiser", 
+            name: "Family Adventure", 
             company: "Gangnam Camping", 
             rate: 4.2, 
-            cost: "120000 ", 
-            people: 7241893, 
+            cost: "120000", 
+            people: "5", 
             license: "A-class", 
+            location: "Daegu",
             date: "2024-11-03"
         }
     },
@@ -221,12 +237,13 @@ export const usedVehicles = [
         id: 17, 
         car: {
             photo: `${img}`, 
-            name: "Retro Van", 
+            name: "Sunset Rider", 
             company: "Daegu Car Ventures", 
             rate: 3.7, 
-            cost: "90000 ", 
-            people: 5982304, 
+            cost: "90000", 
+            people: "4", 
             license: "C-class", 
+            location: "Seoul",
             date: "2024-09-12"
         }
     },
@@ -234,12 +251,13 @@ export const usedVehicles = [
         id: 18, 
         car: {
             photo: `${img1}`, 
-            name: "Nomad Lite", 
+            name: "Classic Camper", 
             company: "Korea Best Motorworks", 
             rate: 3.8, 
-            cost: "95000 ", 
-            people: 7638921, 
+            cost: "95000", 
+            people: "3", 
             license: "B-class", 
+            location: "Jeju",
             date: "2024-10-02"
         }
     },
@@ -247,12 +265,13 @@ export const usedVehicles = [
         id: 19, 
         car: {
             photo: `${img2}`, 
-            name: "Starline Caravan", 
+            name: "Urban Explorer", 
             company: "Seoul New Caravans", 
             rate: 4.0, 
-            cost: "110000 ", 
-            people: 4789136, 
+            cost: "110000", 
+            people: "6", 
             license: "A-class", 
+            location: "Seoul",
             date: "2024-11-10"
         }
     },
@@ -260,274 +279,302 @@ export const usedVehicles = [
         id: 20, 
         car: {
             photo: `${img3}`, 
-            name: "Desert Rider", 
+            name: "Sunset Rider", 
             company: "Han-Li River Motors", 
             rate: 4.3, 
-            cost: "130000 ", 
-            people: 8954321, 
+            cost: "130000", 
+            people: "4", 
             license: "B-class", 
+            location: "Daegu",
             date: "2024-09-20"
         }
     },
-    { 
-        id: 21, 
-        car: {
-            photo: `${img4}`, 
-            name: "Twilight Camper", 
-            company: "Busan Super Motors", 
-            rate: 4.1, 
-            cost: "115000 ", 
-            people: 5136719, 
-            license: "A-class", 
-            date: "2024-10-11"
-        }
-    },
-    { 
-        id: 22, 
-        car: {
-            photo: `${img5}`, 
-            name: "Eco Explorer", 
-            company: "Jeju Caravan Rentals", 
-            rate: 3.6, 
-            cost: "85000 ", 
-            people: 8307593, 
-            license: "B-class", 
-            date: "2024-09-23"
-        }
-    },
-    { 
-        id: 23, 
-        car: {
-            photo: `${img6}`, 
-            name: "Mountain Explorer", 
-            company: "Gyeonggi Local Nomads", 
-            rate: 4.0, 
-            cost: "110000 ", 
-            people: 7428392, 
-            license: "C-class", 
-            date: "2024-10-08"
-        }
-    },
-    { 
-        id: 24, 
-        car: {
-            photo: `${img7}`, 
-            name: "Sunset Voyager", 
-            company: "Seaside Car Motors", 
-            rate: 4.2, 
-            cost: "120000 ", 
-            people: 3749126, 
-            license: "A-class", 
-            date: "2024-11-07"
-        }
-    },
-    { 
-        id: 25, 
-        car: {
-            photo: `${img}`, 
-            name: "Desert Camper", 
-            company: "Gangnam Camping", 
-            rate: 3.8, 
-            cost: "95000 ", 
-            people: 6254937, 
-            license: "B-class", 
-            date: "2024-10-12"
-        }
-    },
-    { 
-        id: 26, 
-        car: {
-            photo: `${img1}`, 
-            name: "Nature Scout", 
-            company: "Daegu Car Ventures", 
-            rate: 4.0, 
-            cost: "105000 ", 
-            people: 4135678, 
-            license: "B-class", 
-            date: "2024-10-05"
-        }
-    },
-    { 
-        id: 27, 
-        car: {
-            photo: `${img2}`, 
-            name: "Mountain Escape", 
-            company: "Korea Best Motorworks", 
-            rate: 4.2, 
-            cost: "125000 ", 
-            people: 5827364, 
-            license: "A-class", 
-            date: "2024-11-08"
-        }
-    },
-    { 
-        id: 28, 
-        car: {
-            photo: `${img3}`, 
-            name: "Urban Retreat", 
-            company: "Seoul New Caravans", 
-            rate: 3.8, 
-            cost: "95000 ", 
-            people: 3276495, 
-            license: "B-class", 
-            date: "2024-09-26"
-        }
-    },
-    { 
-        id: 29, 
-        car: {
-            photo: `${img4}`, 
-            name: "Sunrise Motor", 
-            company: "Han-Li River Motors", 
-            rate: 4.3, 
-            cost: "130000 ", 
-            people: 4026581, 
-            license: "C-class", 
-            date: "2024-11-02"
-        }
-    },
-    { 
-        id: 30, 
-        car: {
-            photo: `${img5}`, 
-            name: "Beachside Camper", 
-            company: "Busan Super Motors", 
-            rate: 4.1, 
-            cost: "115000 ", 
-            people: 1903472, 
-            license: "A-class", 
-            date: "2024-09-18"
-        }
-    },
-    { 
-        id: 31, 
-        car: {
-            photo: `${img6}`, 
-            name: "Wilderness Wagon", 
-            company: "Jeju Caravan Rentals", 
-            rate: 3.9, 
-            cost: "95000 ", 
-            people: 5601849, 
-            license: "B-class", 
-            date: "2024-09-15"
-        }
-    },
-    { 
-        id: 32, 
-        car: {
-            photo: `${img7}`, 
-            name: "Classic Trail", 
-            company: "Gyeonggi Local Nomads", 
-            rate: 4.0, 
-            cost: "110000 ", 
-            people: 7804691, 
-            license: "A-class", 
-            date: "2024-10-20"
-        }
-    },
-    { 
-        id: 33, 
-        car: {
-            photo: `${img}`, 
-            name: "Rugged Journey", 
-            company: "Seaside Car Motors", 
-            rate: 4.2, 
-            cost: "125000 ", 
-            people: 6895072, 
-            license: "B-class", 
-            date: "2024-11-06"
-        }
-    },
-    { 
-        id: 34, 
-        car: {
-            photo: `${img1}`, 
-            name: "Explorer Series", 
-            company: "Gangnam Camping", 
-            rate: 4.1, 
-            cost: "115000 ", 
-            people: 3486729, 
-            license: "C-class", 
-            date: "2024-10-03"
-        }
-    },
-    { 
-        id: 35, 
-        car: {
-            photo: `${img2}`, 
-            name: "Old Town Caravan", 
-            company: "Daegu Car Ventures", 
-            rate: 3.7, 
-            cost: "85000 ", 
-            people: 1234896, 
-            license: "B-class", 
-            date: "2024-09-13"
-        }
-    },
-    { 
-        id: 36, 
-        car: {
-            photo: `${img3}`, 
-            name: "Freedom Motor", 
-            company: "Korea Best Motorworks", 
-            rate: 4.0, 
-            cost: "110000 ", 
-            people: 5408963, 
-            license: "A-class", 
-            date: "2024-11-04"
-        }
-    },
-    { 
-        id: 37, 
-        car: {
-            photo: `${img4}`, 
-            name: "Globetrotter", 
-            company: "Seoul New Caravans", 
-            rate: 4.3, 
-            cost: "130000 ", 
-            people: 8124091, 
-            license: "C-class", 
-            date: "2024-09-09"
-        }
-    },
-    { 
-        id: 38, 
-        car: {
-            photo: `${img5}`, 
-            name: "Eco Trek", 
-            company: "Han-Li River Motors", 
-            rate: 4.1, 
-            cost: "120000 ", 
-            people: 2104983, 
-            license: "B-class", 
-            date: "2024-09-19"
-        }
-    },
-    { 
-        id: 39, 
-        car: {
-            photo: `${img6}`, 
-            name: "Summit Camper", 
-            company: "Busan Super Motors", 
-            rate: 4.2, 
-            cost: "125000 ", 
-            people: 1245674, 
-            license: "A-class", 
-            date: "2024-11-09"
-        }
-    },
-    { 
-        id: 40, 
-        car: {
-            photo: `${img7}`, 
-            name: "Nature's Choice", 
-            company: "Jeju Caravan Rentals", 
-            rate: 3.9, 
-            cost: "100000 ", 
-            people: 3456778, 
-            license: "B-class", 
-            date: "2024-11-10"
-        }
-    }
-];
+        { 
+            id: 21, 
+            car: {
+                photo: `${img4}`, 
+                name: "Trail Blazer Motor", 
+                company: "Gyeonggi Local Nomads", 
+                rate: 4.2, 
+                cost: "120000", 
+                people: "5", 
+                license: "A-class", 
+                location: "Busan",
+                date: "2024-10-05"
+            }
+        },
+        { 
+            id: 22, 
+            car: {
+                photo: `${img5}`, 
+                name: "Family Adventure", 
+                company: "Busan Super Motors", 
+                rate: 4.0, 
+                cost: "100000", 
+                people: "6", 
+                license: "B-class", 
+                location: "Incheon",
+                date: "2024-09-30"
+            }
+        },
+        { 
+            id: 23, 
+            car: {
+                photo: `${img6}`, 
+                name: "Eco Caravan Compact", 
+                company: "Seoul New Caravans", 
+                rate: 3.8, 
+                cost: "95000", 
+                people: "4", 
+                license: "C-class", 
+                location: "Jeju",
+                date: "2024-09-15"
+            }
+        },
+        { 
+            id: 24, 
+            car: {
+                photo: `${img7}`, 
+                name: "Urban Explorer", 
+                company: "Gangnam Camping", 
+                rate: 3.9, 
+                cost: "105000", 
+                people: "5", 
+                license: "A-class", 
+                location: "Seoul",
+                date: "2024-11-12"
+            }
+        },
+        { 
+            id: 25, 
+            car: {
+                photo: `${img}`, 
+                name: "Sunset Rider", 
+                company: "Jeju Caravan Rentals", 
+                rate: 4.1, 
+                cost: "110000", 
+                people: "4", 
+                license: "B-class", 
+                location: "Busan",
+                date: "2024-11-04"
+            }
+        },
+        { 
+            id: 26, 
+            car: {
+                photo: `${img1}`, 
+                name: "Classic Camper", 
+                company: "Seoul New Caravans", 
+                rate: 4.0, 
+                cost: "115000", 
+                people: "3", 
+                license: "A-class", 
+                location: "Incheon",
+                date: "2024-09-18"
+            }
+        },
+        { 
+            id: 27, 
+            car: {
+                photo: `${img2}`, 
+                name: "Trail Blazer Motor", 
+                company: "Gangnam Camping", 
+                rate: 4.3, 
+                cost: "125000", 
+                people: "6", 
+                license: "B-class", 
+                location: "Jeju",
+                date: "2024-11-09"
+            }
+        },
+        { 
+            id: 28, 
+            car: {
+                photo: `${img3}`, 
+                name: "Eco Caravan Compact", 
+                company: "Han-Li River Motors", 
+                rate: 3.9, 
+                cost: "100000", 
+                people: "4", 
+                license: "C-class", 
+                location: "Daegu",
+                date: "2024-09-22"
+            }
+        },
+        { 
+            id: 29, 
+            car: {
+                photo: `${img4}`, 
+                name: "Family Adventure", 
+                company: "Seoul New Caravans", 
+                rate: 4.0, 
+                cost: "110000", 
+                people: "5", 
+                license: "B-class", 
+                location: "Busan",
+                date: "2024-10-05"
+            }
+        },
+        { 
+            id: 30, 
+            car: {
+                photo: `${img5}`, 
+                name: "Urban Explorer", 
+                company: "Daegu Car Ventures", 
+                rate: 3.7, 
+                cost: "95000", 
+                people: "6", 
+                license: "A-class", 
+                location: "Incheon",
+                date: "2024-10-20"
+            }
+        },
+        { 
+            id: 31, 
+            car: {
+                photo: `${img6}`, 
+                name: "Sunset Rider", 
+                company: "Jeju Caravan Rentals", 
+                rate: 4.1, 
+                cost: "120000", 
+                people: "3", 
+                license: "B-class", 
+                location: "Daegu",
+                date: "2024-10-12"
+            }
+        },
+        { 
+            id: 32, 
+            car: {
+                photo: `${img7}`, 
+                name: "Classic Camper", 
+                company: "Gyeonggi Local Nomads", 
+                rate: 4.0, 
+                cost: "125000", 
+                people: "6", 
+                license: "A-class", 
+                location: "Seoul",
+                date: "2024-11-01"
+            }
+        },
+        { 
+            id: 33, 
+            car: {
+                photo: `${img}`, 
+                name: "Trail Blazer Motor", 
+                company: "Busan Super Motors", 
+                rate: 3.8, 
+                cost: "110000", 
+                people: "5", 
+                license: "B-class", 
+                location: "Jeju",
+                date: "2024-10-18"
+            }
+        },
+        { 
+            id: 34, 
+            car: {
+                photo: `${img1}`, 
+                name: "Family Adventure", 
+                company: "Gyeonggi Local Nomads", 
+                rate: 4.2, 
+                cost: "130000", 
+                people: "4", 
+                license: "A-class", 
+                location: "Daegu",
+                date: "2024-09-15"
+            }
+        },
+        { 
+            id: 35, 
+            car: {
+                photo: `${img2}`, 
+                name: "Sunset Rider", 
+                company: "Seoul New Caravans", 
+                rate: 4.0, 
+                cost: "105000", 
+                people: "6", 
+                license: "B-class", 
+                location: "Incheon",
+                date: "2024-09-22"
+            }
+        },
+        { 
+            id: 36, 
+            car: {
+                photo: `${img3}`, 
+                name: "Eco Caravan Compact", 
+                company: "Gangnam Camping", 
+                rate: 3.9, 
+                cost: "95000", 
+                people: "5", 
+                license: "A-class", 
+                location: "Seoul",
+                date: "2024-11-03"
+            }
+        },
+            { 
+                id: 37, 
+                car: {
+                    photo: `${img4}`, 
+                    name: "Urban Explorer", 
+                    company: "Seoul New Caravans", 
+                    rate: 4.1, 
+                    cost: "120000", 
+                    people: "6", 
+                    license: "B-class", 
+                    location: "Incheon",
+                    date: "2024-10-22"
+                }
+            },
+            { 
+                id: 38, 
+                car: {
+                    photo: `${img5}`, 
+                    name: "Family Adventure", 
+                    company: "Gangnam Camping", 
+                    rate: 4.0, 
+                    cost: "110000", 
+                    people: "4", 
+                    license: "A-class", 
+                    location: "Busan",
+                    date: "2024-11-08"
+                }
+            },
+            { 
+                id: 39, 
+                car: {
+                    photo: `${img6}`, 
+                    name: "Classic Camper", 
+                    company: "Jeju Caravan Rentals", 
+                    rate: 4.2, 
+                    cost: "130000", 
+                    people: "5", 
+                    license: "B-class", 
+                    location: "Seoul",
+                    date: "2024-10-30"
+                }
+            },
+            { 
+                id: 40, 
+                car: {
+                    photo: `${img7}`, 
+                    name: "Trail Blazer Motor", 
+                    company: "Gyeonggi Local Nomads", 
+                    rate: 3.9, 
+                    cost: "115000", 
+                    people: "5", 
+                    license: "A-class", 
+                    location: "Jeju",
+                    date: "2024-09-28"
+                }
+            }]
+        
+   
+    
+
+
+        
+    
+    
 

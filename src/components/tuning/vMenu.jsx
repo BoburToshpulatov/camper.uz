@@ -4,12 +4,23 @@ import star from '../../assets/bx_bxs-star (1).svg'
 import { tuning } from './mock/mock';
 import { Link } from 'react-router-dom';
 
-const VMenuComponent = () => {
-    console.log(tuning);
+const VMenuComponent = ({searchData, checkedData, checkedDataPeople,checkedDataCompany, checkedDataLicense, checkedDataLocation}) => {
+
+  const searchedDataList = tuning.filter((data)=>{
+  const name = checkedData && checkedData.length > 0 ? checkedData.includes(data.car.name) : true;
+  const people = checkedDataPeople && checkedDataPeople.length > 0 ? checkedDataPeople.includes(data.car.people) : true;
+  const company = checkedDataCompany && checkedDataCompany.length > 0 ? checkedDataCompany.includes(data.car.company) : true;
+  const license = checkedDataLicense && checkedDataLicense.length > 0 ? checkedDataLicense.includes(data.car.license) : true;
+  const location = checkedDataLocation && checkedDataLocation.length > 0 ? checkedDataLocation.includes(data.car.location) : true;
+  return name && people && company && license && location;
+  })
+  
+  const searching = searchedDataList.filter ((data) =>
+    data.car.name.toLowerCase().includes(searchData.toLowerCase())
+    );
     return (
       <CarCollectionVmenu>
-          {tuning.map((value, index) => {
-                  return ( 
+            {searching.length > 0 ? (searching.map((value) => ( 
                     <Link to={`/tuning-detail/${value.id}`} style={{textDecoration:'none'}}>
   <VMenucarBoxes>
       <MiniBox1><img src={value.car.photo} alt="car-icon" /></MiniBox1>
@@ -34,9 +45,11 @@ const VMenuComponent = () => {
   </VMenucarBoxes>
   </Link>
   
-  );
-  })
-  }
+))
+):(
+  <div>NOT FOUND</div>
+)}
+
   
       </CarCollectionVmenu>
     )

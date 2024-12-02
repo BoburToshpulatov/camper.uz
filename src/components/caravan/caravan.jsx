@@ -9,7 +9,6 @@ import hImg from "../../assets/hButton.svg"
 import minicars from '../../assets/image.png'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
-import top100Films from './top100Films';
 import Numbers from './numbers'
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -23,14 +22,33 @@ import Checkbox from '@mui/material/Checkbox';
 
 
 const Caravan = () => {
-
   const [active, setActive] = useState(true)
-  function handleHmenu(){
-    setActive(true)
+  const [searchData, setSearchData] = useState('');
+  const [checkedData, setCheckedData] =useState([]);
+  const [checkedDataPeople, setCheckedDataPeople] = useState([]);
+  const [checkedDataCompany, setCheckedDataCompany] = useState([]);
+  const [checkedDataLicense, setCheckedDataLicense] = useState([]);
+  const [checkedDataLocation, setCheckedDataLocation] = useState([]);
+  
+  const handleCheckbox = (e, setState) => {
+    const {value, checked} = e.target;
+  
+    if(checked) {
+      setState ((prev) => [...prev, value]);
   }
-  function handleVmenu(){
-    setActive(false)
+  else {
+    setState((prev) => prev.filter((data) => data !== value));
   }
+  }
+  
+    function handleHmenu(){
+      setActive(true)
+    }
+    function handleVmenu(){
+      setActive(false)
+    }
+    
+    const [isFocused, setIsFocused] = useState(false);
   return (<>
     <BackgroundCaravan>
     <h3>Home / Caravan</h3>
@@ -49,14 +67,19 @@ const Caravan = () => {
     <h1>Item <span style={{color : '#006DAB'}}>25.156</span></h1>
     </Hamburger>
     <SelectButton>
-      <label htmlFor="">Sort by</label>
-      <Autocomplete className='autocomplete'
-      disablePortal
-      options={top100Films}
-      sx={{height: 45}}
-      size='small'
-      renderInput={(params) => <TextField {...params} label="Company"  />}
-    />
+    <input type="text"  placeholder='Search your CARAVAN here'
+      value={searchData}
+      onChange={(e) => setSearchData(e.target.value)}
+      style={{
+        border: `2px solid ${isFocused ? "#006DAB" : "#ccc"}`,
+        outline: "none",
+        padding: "8px",
+        borderRadius: "4px",
+        transition: "border-color 0.3s ease",
+      }}
+      onFocus={() => setIsFocused(true)}
+      onBlur={() => setIsFocused(false)}
+      />
      </SelectButton>
      <Autocomplete className='autocomplete2'
       disablePortal
@@ -97,9 +120,13 @@ const Caravan = () => {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-    <FormControlLabel control={<Checkbox  />} label="Aidal" />
-    <FormControlLabel control={<Checkbox  />} label="Knal" />
-    <FormControlLabel control={<Checkbox  />} label="Escape" />
+          <FormControlLabel control={<Checkbox value="Adventure Compact" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Adventure Compact" />
+    <FormControlLabel control={<Checkbox value="Family Explorer" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Family Explorer" />
+    <FormControlLabel control={<Checkbox value="Weekend Warrior" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Weekend Warrior" />
+    <FormControlLabel control={<Checkbox value="Urban Camper" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Urban Camper" />
+    <FormControlLabel control={<Checkbox value="Coastal Cruiser" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Coastal Cruiser" />
+    <FormControlLabel control={<Checkbox value="Deluxe Retreat" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Deluxe Retreat" />
+    <FormControlLabel control={<Checkbox value="Mountain Explorer" onChange={(e) => handleCheckbox(e, setCheckedData)}/>} label="Mountain Explorer" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -121,8 +148,13 @@ const Caravan = () => {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-    <FormControlLabel control={<Checkbox  />} label="Escape" />
-    <FormControlLabel control={<Checkbox  />} label="Aidal" />
+          <FormControlLabel control={<Checkbox value="Seoul Camping Cars" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Seoul Camping Cars" />
+          <FormControlLabel control={<Checkbox value="Han River Camping" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Han River Camping" />
+          <FormControlLabel control={<Checkbox value="Busan Trail Camping" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Busan Trail Camping" />
+          <FormControlLabel control={<Checkbox value="Jeju Caravan Rentals" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Jeju Caravan Rentals" />
+          <FormControlLabel control={<Checkbox value="Seaside Motor Caravans" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Seaside Motor Caravans" />
+          <FormControlLabel control={<Checkbox value="Gangnam Camping" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Gangnam Camping" />
+          <FormControlLabel control={<Checkbox value="Daegu VAN Ventures" onChange={(e) => handleCheckbox(e, setCheckedDataCompany)}/>} label="Daegu VAN Ventures" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -144,9 +176,9 @@ const Caravan = () => {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-    <FormControlLabel control={<Checkbox  />} label="1 year" />
-    <FormControlLabel control={<Checkbox  />} label="2 years" />
-    <FormControlLabel control={<Checkbox  />} label="1.5 year" />
+          <FormControlLabel control={<Checkbox value="A-class" onChange={(e) => handleCheckbox(e, setCheckedDataLicense)}/>} label="A-class" />
+          <FormControlLabel control={<Checkbox value="B-class" onChange={(e) => handleCheckbox(e, setCheckedDataLicense)}/>} label="B-class" />
+          <FormControlLabel control={<Checkbox value="C-class" onChange={(e) => handleCheckbox(e, setCheckedDataLicense)}/>} label="C-class" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -168,9 +200,10 @@ const Caravan = () => {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-    <FormControlLabel control={<Checkbox  />} label="2" />
-    <FormControlLabel control={<Checkbox  />} label="3-4" />
-    <FormControlLabel control={<Checkbox  />} label="5+" />
+          <FormControlLabel control={<Checkbox value="3" onChange={(e) => handleCheckbox(e, setCheckedDataPeople)}/>} label="3" />
+          <FormControlLabel control={<Checkbox value="4" onChange={(e) => handleCheckbox(e, setCheckedDataPeople)}/>} label="4" />
+          <FormControlLabel control={<Checkbox value="5" onChange={(e) => handleCheckbox(e, setCheckedDataPeople)}/>} label="5" />
+          <FormControlLabel control={<Checkbox value="6" onChange={(e) => handleCheckbox(e, setCheckedDataPeople)}/>} label="6" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -192,9 +225,10 @@ const Caravan = () => {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-    <FormControlLabel control={<Checkbox />} label="Seoul" />
-    <FormControlLabel control={<Checkbox  />} label="Daegu" />
-    <FormControlLabel control={<Checkbox  />} label="Pusan" />
+          <FormControlLabel control={<Checkbox value="Seoul" onChange={(e) => handleCheckbox(e, setCheckedDataLocation)}/>} label="Seoul" />
+          <FormControlLabel control={<Checkbox value="Busan" onChange={(e) => handleCheckbox(e, setCheckedDataLocation)}/>} label="Busan" />
+          <FormControlLabel control={<Checkbox value="Jeju" onChange={(e) => handleCheckbox(e, setCheckedDataLocation)}/>} label="Jeju" />
+          <FormControlLabel control={<Checkbox value="Gangnam" onChange={(e) => handleCheckbox(e, setCheckedDataLocation)}/>} label="Gangnam" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -210,7 +244,8 @@ const Caravan = () => {
   <BlueButton style={{marginTop:'15px',marginLeft:'132px'}}>Compare</BlueButton>
 </Sidebar>
 { 
-  active ?    <HMenuComponent/>: <VMenuComponent/>
+  active ?    <HMenuComponent searchData={searchData} checkedData={checkedData} checkedDataPeople={checkedDataPeople} checkedDataCompany={checkedDataCompany} checkedDataLicense={checkedDataLicense} checkedDataLocation={checkedDataLocation}/>
+  : <VMenuComponent searchData={searchData} checkedData={checkedData} checkedDataPeople={checkedDataPeople} checkedDataCompany={checkedDataCompany} checkedDataLicense={checkedDataLicense} checkedDataLocation={checkedDataLocation}/>
 }
 
 

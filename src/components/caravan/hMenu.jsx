@@ -8,12 +8,24 @@ import { Stack } from '@mui/material'
 
 
 
-const HMenuComponent = () => {
-    console.log(caravans);
+const HMenuComponent = ({searchData, checkedData, checkedDataPeople,checkedDataCompany, checkedDataLicense, checkedDataLocation}) => {
+
+  const searchedDataList = caravans.filter((data)=>{
+  const name = checkedData && checkedData.length > 0 ? checkedData.includes(data.name) : true;
+  const people = checkedDataPeople && checkedDataPeople.length > 0 ? checkedDataPeople.includes(data.people) : true;
+  const company = checkedDataCompany && checkedDataCompany.length > 0 ? checkedDataCompany.includes(data.company) : true;
+  const license = checkedDataLicense && checkedDataLicense.length > 0 ? checkedDataLicense.includes(data.license) : true;
+  const location = checkedDataLocation && checkedDataLocation.length > 0 ? checkedDataLocation.includes(data.location) : true;
+  return name && people && company && license && location;
+  })
+  
+  
+  const searching = searchedDataList.filter ((data) =>
+  data.name.toLowerCase().includes(searchData.toLowerCase())
+  );
   return ( 
     <CarCollection>
-       {caravans.map ((value, index) =>{
-        return(
+        {searching.length > 0 ? (searching.map((value) => ( 
           <Link to={`/caravan-detail/${value.id}`} style={{textDecoration:'none'}}>
            <CarBoxes >
                     <img src={value.photo} alt="car-icon" />
@@ -38,8 +50,10 @@ const HMenuComponent = () => {
     </MuiButtons>
                 </CarBoxes>
                 </Link>
-              );
-       })}
+               ))
+              ):(
+                <div>NOT FOUND</div>
+              )}
                 
     </CarCollection>
   )

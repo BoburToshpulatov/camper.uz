@@ -8,12 +8,28 @@ import { Stack } from '@mui/material'
 
 
 
-const HMenuComponent = () => {
-    console.log(motordata);
+
+
+
+const HMenuComponent = ({searchData, checkedData, checkedDataPeople,checkedDataCompany, checkedDataLicense, checkedDataLocation}) => {
+
+const searchedDataList = motordata.filter((data)=>{
+const name = checkedData && checkedData.length > 0 ? checkedData.includes(data.car.name) : true;
+const people = checkedDataPeople && checkedDataPeople.length > 0 ? checkedDataPeople.includes(data.car.people) : true;
+const company = checkedDataCompany && checkedDataCompany.length > 0 ? checkedDataCompany.includes(data.car.company) : true;
+const license = checkedDataLicense && checkedDataLicense.length > 0 ? checkedDataLicense.includes(data.car.license) : true;
+const location = checkedDataLocation && checkedDataLocation.length > 0 ? checkedDataLocation.includes(data.car.location) : true;
+return name && people && company && license && location;
+})
+
+
+const searching = searchedDataList.filter ((data) =>
+data.car.name.toLowerCase().includes(searchData.toLowerCase())
+);
+
   return ( 
     <CarCollection>
-        {motordata.map((value, index) => {
-                return ( 
+        {searching.length > 0 ? (searching.map((value) => ( 
                   <Link to={`/motor-detail/${value.id}`} style={{textDecoration:'none'}}>
                 <CarBoxes key={value.id}>
                     <img src={value.car.photo} alt="car-icon" />
@@ -38,9 +54,11 @@ const HMenuComponent = () => {
     </MuiButtons>
                 </CarBoxes>
                 </Link>
-                );
-            })
-        }
+                ))
+            ):(
+              <div style={{justifyContent:'flex-start'}}>NOT FOUND</div>
+            )}
+       
     
 
 

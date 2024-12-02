@@ -73,7 +73,6 @@ export const Hamburger=styled.div`
 display: flex;
 align-items: center;
 gap: 25px;
-margin-right: 262px;
 h1{
     color: var(--text, #373737);
 font-family: Montserrat;
@@ -101,24 +100,26 @@ export const SelectButton=styled.div`
 display: flex;
 align-items: center;
 gap: 10px;
-label{
-    color: var(--text, #373737);
+input{
+    width: 572px;
+    height: 19px;
+    margin-top: -4px;
+    border-radius: 5px;
 font-family: Montserrat;
-font-size: 18px;
+font-size: 16px;
 font-style: normal;
 font-weight: 500;
-line-height: 100%; /* 16px */
-}
-.autocomplete{
-    width: 255px;
+line-height: 100%; /* 14px */
+padding: 10px;
+
     @media only screen and (max-width:1250px) {
-        width: 210px;
+        width: 263px;
     }
 }
 @media only screen and (max-width:710px) {
    order: 3;
-   .autocomplete{
-    width: 180px;
+   input{
+    width: 230px;
 }
     }
 `
@@ -288,16 +289,22 @@ font-weight: 700;
 line-height: normal;
 border: none;
 `
-export const CarCollection=styled.div`
-display: grid;
-grid-template-areas: 'a a a a';
+export const CarCollection = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 15px; /* Consistent spacing */
+  width: 940px; /* Full width */
+
+  align-items: start; /* Top alignment */
+  grid-auto-rows: min-content; /* Ensure rows resize based on content */
 justify-content: center;
-gap: 15px;
+
 @media only screen and (max-width:1250px) {
-    grid-template-areas: 'a a';
+    grid-template-columns: repeat(2, 1fr);
+    width: auto;
 }
 @media only screen and (max-width:710px) {
-    grid-template-areas: 'a';
+    grid-template-columns: repeat(1, 1fr);
 }
 `
 
@@ -424,10 +431,12 @@ export const CarCollectionVmenu=styled.div`
 display: flex;
 flex-direction: column;
 gap: 20px;
+width: 940px;
+align-items: center;
 `
 export const VMenucarBoxes=styled.div`
 width: 941px;
-height: 170px;
+height: 175px;
 flex-shrink: 0;
 border-radius: 20px;
 background: #FFF;
@@ -438,7 +447,7 @@ display: flex;
 }
 @media only screen and (max-width:710px) {
     width: 365px;
-    height: 140px;
+    height: 145px;
 }
 `
 export const MiniBox1=styled.div`

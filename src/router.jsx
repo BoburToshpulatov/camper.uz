@@ -15,6 +15,7 @@ import UsedcarDetail from './components/usedcar/usedcar-detail';
 import CampingDetail from './components/campingPlaces/campingDetail';
 import SigninComponent from './components/CamperLogo/signin';
 import RegistrationComponent from './components/CamperLogo/registration';
+import CartComponent from './components/CamperLogo/cart';
 
 
 
@@ -46,6 +47,7 @@ const RouterComponents = () => {
 <Route path='/camping-detail/:id' element={<CampingDetail/>}/>
 <Route path='/' element={<SigninComponent/>}/>
 <Route path='/registration' element={<RegistrationComponent/>}/>
+<Route path='/cart' element={<CartComponent/>}/>
 </Routes>
 {hiddenNavbar && <Footer/>}
 </>

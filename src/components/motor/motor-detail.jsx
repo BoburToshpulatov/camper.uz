@@ -154,19 +154,19 @@ All our vans are equipped with an electric step.</p>
 
        <Description>
        <DescriptionLeft>
-        <h1 style={{marginRight:'166px',marginTop:'50px'}}>Heating when driving</h1>
+        <h1 style={{marginRight:'166px'}}>Heating when driving</h1>
         <p>Fuel heating is now very popular in the industry, but this was not always the case; Camper (once again) led the way in this area over 15 years ago. <br />
         One of the advantages it offers is that it can heat up your vehicle while you drive, for a more comfortable arrival.
 					</p>
-          <Stack style={{marginTop:'-15px',marginRight:'180px'}} spacing={2} direction="row">
-      <Button style={{width:'150px',borderRadius:'10px'}} variant="contained">ADD TO CART</Button>
-      <Button style={{width:'150px',border:'1.5px solid',borderRadius:'10px'}} variant="outlined">COMPARE</Button>
+          <Stack style={{marginTop:'-35px',marginRight:'180px'}} spacing={2} direction="row">
+      <Button className='buttoninleft' style={{width:'150px',borderRadius:'10px'}} variant="contained">ADD TO CART</Button>
+      <Button className='buttoninleft' style={{width:'150px',border:'1.5px solid',borderRadius:'10px'}} variant="outlined">COMPARE</Button>
        </Stack>
         </DescriptionLeft> 
         <DescriptionRight4></DescriptionRight4>
        </Description>
 
-<TabOptions>
+<TabOptions style={{marginTop: '20px'}}>
 <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">

@@ -59,7 +59,7 @@ const Navbar = () => {
 <Link to='/camping' style={{textDecoration:'none'}}><p>Camping Place</p></Link>
     </Menu>
     <Icons>
-      <img src={cart} alt="cart-icon" />
+      <Link to='/cart'><img src={cart} alt="cart-icon" /></Link>
      <Link to='/' style={{textDecoration:'none'}}> <img className='user' src={user} alt="user-icon" /></Link>
   <Select><option>En</option></Select>
       <img className='hamburg' src={hamburger} alt="" onClick={handleClick}/>

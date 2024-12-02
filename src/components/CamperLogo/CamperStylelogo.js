@@ -691,3 +691,137 @@ align-items: center;
 border: none;
 }
 `
+export const Orders = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #FAFAFA;
+padding: 20px 10px 50px 10px;
+h2{
+    color: rgba(55, 55, 55, 0.80);
+font-family: Montserrat;
+font-size: 23px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+`
+export const Myorders =styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 30px;
+
+h1{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 27px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+border-bottom: 2px solid #FF7A00;
+}
+`
+export const OrderBoxes = styled.div`
+display: flex;
+width: 1170px;
+height: 180px;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+@media only screen and (max-width: 1190px) {
+    width: 750px;
+}
+@media only screen and (max-width: 770px) {
+    width: 354px;
+height: 295px;
+flex-direction: column;
+flex-shrink: 0;
+}
+`
+
+export const OrderBoxesMini1 = styled.div`
+display: flex;
+align-items: center;
+flex: 1,5;
+img{
+    width: 330px;
+height: 160px;
+flex-shrink: 0;
+}
+@media only screen and (max-width: 770px) {
+    flex: 1;
+}
+`
+export const OrderBoxesMini2 = styled.div`
+flex: 2.5;
+padding:10px 25px;
+p{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-top: -10px;
+}
+@media only screen and (max-width: 770px) {
+    flex: 1;
+}
+`
+export const CarNamePrice =styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+h1{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+`
+export const LocationPayment= styled.div`
+display: flex;
+align-items: center;
+margin-top: 70px;
+gap: 100px;
+@media only screen and (max-width: 1190px) {
+    gap: 30px;
+}
+@media only screen and (max-width: 770px) {
+    margin-top: 30px;
+    gap: 20px;
+}
+`
+export const LocationPaymentMini = styled.div`
+p{
+    color: var(--text, #373737);
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+span{
+    color: rgba(55, 55, 55, 0.70);
+font-family: Montserrat;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 5px;
+}
+}
+@media only screen and (max-width: 770px) {
+   p{
+    font-size: 13px;
+    span{
+        font-size: 13px;
+        margin-left: 0;
+    }
+   }
+   
+}
+`

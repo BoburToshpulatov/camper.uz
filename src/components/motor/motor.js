@@ -435,7 +435,7 @@ width: 940px;
 align-items: center;
 `
 export const VMenucarBoxes=styled.div`
-width: 941px;
+width: 940px;
 height: 180px;
 flex-shrink: 0;
 border-radius: 20px;
@@ -679,12 +679,14 @@ margin-top: -1px;
 export const TabOptions=styled.div`
 `
 export const ItemReview=styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
 `
 export const Best=styled.div`
 display: flex;
+width: 1220px;
 justify-content: space-between;
-padding: 0px 20px;
 align-items: center;
 /* margin-top: -10px; */
 h1{
@@ -695,12 +697,31 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+@media only screen and (max-width: 1240px) {
+    width: 650px;
+}
+@media only screen and (max-width: 670px) {
+    width: 354px;
+    h1{
+        font-size: 16px;
+    }
+}
 `
 export const ItemReviewInformation=styled.div`
+width: 1220px;
 display: flex;
 justify-content: center;
-padding: 7px 20px;
 border-bottom: 1.5px solid rgba(55, 55, 55, 0.30);
+@media only screen and (max-width: 1240px) {
+    width: 650px;
+
+}
+@media only screen and (max-width: 670px) {
+    width: 354px;
+    flex-direction: column;
+    margin-top: 40px;
+    border: 1px solid black;
+}
 `
 export const Infbox1=styled.div`
 flex: 1;
@@ -708,6 +729,14 @@ display: flex;
 img{
     width: 80%;
     height: 80px;
+}
+@media only screen and (max-width: 670px) {
+flex: 0;
+  img{
+    width: 349.683px;
+height: 160px;
+flex-shrink: 0;
+  }  
 }
 `
 export const Infbox2=styled.div`
@@ -732,6 +761,22 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+@media only screen and (max-width: 1240px) {
+  flex: 3;
+}
+@media only screen and (max-width: 670px) {
+flex: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 5px;
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size:14px;
+    }
+}
 `
 export const Infbox3=styled.div`
 flex: 1;
@@ -744,6 +789,16 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 
+}
+@media only screen and (max-width: 670px) {
+flex: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 0px 3px;
+    p{
+        font-size: 14px;
+    }
 }
 `
 export const Questions=styled.div`
@@ -852,7 +907,7 @@ align-items: center;
 background-color:#FAFAFA;
 @media only screen and (max-width:1250px) {
     flex-direction: column;
-    height: 780px;
+    height: 700px;
 }
 @media only screen and (max-width: 625px) {
 height:510px;
@@ -890,7 +945,7 @@ margin-top: -5px;
     width: 600px;
     margin: 0;
     align-items: flex-start;
-    margin-bottom: -140px;
+    margin-left: 2px;
    h1{
     margin: 0;
     margin-top: 25px;
@@ -899,22 +954,23 @@ margin-top: -5px;
    p{
     margin-top:15px;
    }
-   span{
-    display: none;
-   }
+   
 }
 @media only screen and (max-width: 625px) {
     width: 354px;
 height: 224px;
 margin-bottom: 0;
 h1{
-    font-size: 23px;
+    font-size: 18px;
     margin-top: 15px;
 }
 p{
-    font-size: 13px;
+    font-size: 12px;
     width: 360px;
     margin-top: 5px;
+}
+.buttoninleft{
+    height: 40px;
 }
 }
 `
@@ -936,7 +992,7 @@ height: 224px;
 }
 `
 export const DescriptionRight1=styled.div`
-height: 460px;
+height: 450px;
 flex: 1;
 background-image: url('${description2}');
 background-position: center;
@@ -988,7 +1044,7 @@ height: 224px;
 }
 `
 export const DescriptionRight4=styled.div`
-height: 465px;
+height: 460px;
 flex: 1;
 background-image: url('${description5}');
 background-position: center;

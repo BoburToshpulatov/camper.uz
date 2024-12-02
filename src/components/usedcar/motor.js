@@ -569,6 +569,9 @@ font-size: 60px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+@media only screen and (max-width: 625px) {
+    font-size: 45px;
+}
 }
 `
 export const CarDetails=styled.div`
@@ -578,10 +581,13 @@ align-items: center;
 background: #FAFAFA;
 gap: 20px;
 padding:10px  0px 60px 0px;
+@media only screen and (max-width:1250px) {
+    flex-direction: column;
+}
 `
 export const CarDetailsLeft=styled.div`
-width: 560px;
-height: 340px;
+width: 600px;
+height: 360px;
 flex-shrink: 0;
 display: flex;
 justify-content: center;
@@ -594,10 +600,18 @@ img{
     width: 580px;
     height: 310px; 
 }
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+img{
+    width: 300px;
+    height: 200px;
+}
+}
 `
 export const CarDetailsRight=styled.div`
-width: 570px;
-height: 340px;
+width: 600px;
+height: 360px;
 flex-shrink: 0;
 border-radius: 10px;
 background: #FFF;
@@ -605,6 +619,10 @@ background: #FFF;
 
 /* btn sh */
 box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.10);
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+}
 `
 export const RightNamePrice=styled.div`
 display: flex;
@@ -619,6 +637,20 @@ font-size: 30px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+@media only screen and (max-width: 625px) {
+    font-size: 18px;
+}
+}
+h2{
+    color: black;
+font-family: Montserrat;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+@media only screen and (max-width: 625px) {
+    font-size: 18px;
+}
 }
 `
 export const CompanyLicense=styled.div`
@@ -637,6 +669,9 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 margin-top: -1px;
+@media only screen and (max-width: 625px) {
+    font-size: 13px;
+}
 }
 
 `
@@ -646,11 +681,14 @@ flex: 1;
 p{
     color: rgba(55, 55, 55, 0.80);
 font-family: Montserrat;
-font-size: 17.5px;
+font-size: 17px;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
 margin-top: -1px;
+@media only screen and (max-width: 625px) {
+    font-size: 13px;
+}
 }
 `
 export const TabOptions=styled.div`
@@ -674,6 +712,7 @@ line-height: normal;
 }
 `
 export const ItemReviewInformation=styled.div`
+width: 1150px;
 display: flex;
 justify-content: center;
 padding: 7px 20px;
@@ -827,6 +866,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color:#FAFAFA;
+@media only screen and (max-width:1250px) {
+    flex-direction: column;
+    height: 700px;
+}
+@media only screen and (max-width: 625px) {
+height:510px;
+}
 `
 export const DescriptionLeft=styled.div`
 display: flex;
@@ -855,44 +901,125 @@ height: 169px;
 flex-shrink: 0;
 margin-top: -5px;
 }
+@media only screen and (max-width:1250px) {
+    order: 2;
+    width: 600px;
+    margin: 0;
+    align-items: flex-start;
+    margin-left: 2px;
+   h1{
+    margin: 0;
+    margin-top: 25px;
+    font-size: 33px;
+   }
+   p{
+    margin-top:15px;
+   }
+   
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+margin-bottom: 0;
+h1{
+    font-size: 18px;
+    margin-top: 15px;
+}
+p{
+    font-size: 12px;
+    width: 360px;
+    margin-top: 5px;
+}
+.buttoninleft{
+    height: 40px;
+}
+}
 `
 export const DescriptionRight=styled.div`
-height: 435px;
+height: 460px;
 flex: 1;
 background-image: url('${description1}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width:1250px) {
+    order: 1;
+    width: 600px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+}
 `
 export const DescriptionRight1=styled.div`
-height: 435px;
+height: 450px;
 flex: 1;
 background-image: url('${description2}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width:1250px) {
+    order: 1;
+    width: 600px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+}
 `
 export const DescriptionRight2=styled.div`
-height: 435px;
+height: 460px;
 flex: 1;
 background-image: url('${description3}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width:1250px) {
+    order: 1;
+    width: 600px;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+}
 `
 export const DescriptionRight3=styled.div`
-height: 435px;
+height: 460px;
 flex: 1;
 background-image: url('${description4}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width:1250px) {
+    order: 1;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+}
 `
 export const DescriptionRight4=styled.div`
-height: 435px;
+height: 460px;
 flex: 1;
 background-image: url('${description5}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width:1250px) {
+    order: 1;
+    width: 600px;
+    border-radius: 10px;
+    margin-top: -70px;
+}
+@media only screen and (max-width: 625px) {
+    width: 354px;
+height: 224px;
+margin-top: 0;
+}
 `

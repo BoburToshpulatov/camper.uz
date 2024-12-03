@@ -170,7 +170,7 @@ All our vans are equipped with an electric step.</p>
 <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab style={{marginLeft:'34px'}} label="Item reviews" {...a11yProps(0)} />
+          <Tab className='tabs' label="Item reviews" {...a11yProps(0)} />
           <Tab label="Q&A" {...a11yProps(1)} />
           <Tab label="FAQ" {...a11yProps(2)} />
           <Tab label="Contact" {...a11yProps(3)} />
@@ -196,7 +196,7 @@ All our vans are equipped with an electric step.</p>
                   </Infbox1>
                   <Infbox2>
                     <h1>{value.car.name}</h1>
-                    <p style={{marginTop:'-5px'}}>{value.car.company}</p>
+                    <p d>{value.car.company}</p>
                     <p style={{color:'#373737'}}>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
                   </Infbox2>
                   <Infbox3>
@@ -214,13 +214,13 @@ All our vans are equipped with an electric step.</p>
       <CustomTabPanel value={value} index={1}>
         <Questions>
           <QuestionsLeft>
-          <Box
+          <Box 
       component="form"
       sx={{ '& > :not(style)': { m: 1, width: '60ch' } }}
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
+     <TextField className='accordion' id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -228,7 +228,7 @@ All our vans are equipped with an electric step.</p>
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
+     <TextField className='accordion' id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -236,7 +236,7 @@ All our vans are equipped with an electric step.</p>
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
+     <TextField className='accordion' id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?"/>
     </Box>
     <Box
       component="form"
@@ -244,7 +244,7 @@ All our vans are equipped with an electric step.</p>
       noValidate
       autoComplete="off"
     >
-     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
+     <TextField className='accordion' id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
     </Box>
     <Box
       component="form"
@@ -253,7 +253,7 @@ All our vans are equipped with an electric step.</p>
       autoComplete="off"
       
     >
-     <TextField id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
+     <TextField className='accordion' id="standard-basic" label="Name" variant="standard" defaultValue="Question Lorem ipsum dolor sit amet ?" />
     </Box>
           </QuestionsLeft>
           <QuestionsRight>
@@ -262,7 +262,7 @@ All our vans are equipped with an electric step.</p>
       <input type="text" name="user_name" placeholder='Your name' />
       <input type="email" name="user_email" placeholder='Your email' />
       <textarea name="message" placeholder='Your question'/>
-      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+      <Button className='questionbtn' type='submit' value='Send'  variant="contained">Send your question</Button>
     </form>
           </QuestionsRight>
         </Questions>
@@ -270,7 +270,7 @@ All our vans are equipped with an electric step.</p>
       <CustomTabPanel value={value} index={2}>
         <Questions>
           <QuestionsLeft>
-          <Accordion>
+          <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -284,7 +284,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -298,7 +298,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -312,7 +312,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -326,7 +326,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -340,7 +340,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className='accordion'>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
@@ -354,20 +354,7 @@ All our vans are equipped with an electric step.</p>
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon />}
-          aria-controls="panel1-content"
-          id="panel1-header"
-          width='150px'
-        >
-         Frequently asked questions
-        </AccordionSummary>
-        <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
-        </AccordionDetails>
-      </Accordion>
+      
           </QuestionsLeft>
           <QuestionsRight>
             <h1>Have you got a question?</h1>
@@ -375,7 +362,7 @@ All our vans are equipped with an electric step.</p>
       <input type="text" name="user_name" placeholder='Your name' />
       <input type="email" name="user_email" placeholder='Your email' />
       <textarea name="message" placeholder='Your question'/>
-      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+      <Button className='questionbtn' type='submit' value='Send' variant="contained">Send your question</Button>
     </form>
           </QuestionsRight>
         </Questions>
@@ -402,7 +389,7 @@ All our vans are equipped with an electric step.</p>
       <input  type="text" name="user_name" placeholder='Your name' />
       <input type="email" name="user_email" placeholder='Your email' />
       <textarea name="message" placeholder='Your question'/>
-      <Button type='submit' value='Send' style={{width:'390px',height:'45px',marginTop:'20px'}} variant="contained">Send your question</Button>
+      <Button  className='questionbtn' type='submit' value='Send'  variant="contained">Send your question</Button>
     </form>
           </QuestionsRight>
         </Questions>

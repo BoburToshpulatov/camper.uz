@@ -692,14 +692,23 @@ margin-top: -1px;
 }
 `
 export const TabOptions=styled.div`
+.tabs{
+    margin-left: 30px;
+    @media only screen and (max-width: 670px) {
+        margin: 0;
+    }
+}
 `
 export const ItemReview=styled.div`
-
+display: flex;
+flex-direction: column;
+align-items: center;
+background: #FDFDFD;
 `
 export const Best=styled.div`
 display: flex;
+width: 1220px;
 justify-content: space-between;
-padding: 0px 20px;
 align-items: center;
 /* margin-top: -10px; */
 h1{
@@ -710,20 +719,45 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+@media only screen and (max-width: 1240px) {
+    width: 650px;
+}
+@media only screen and (max-width: 670px) {
+    width: 354px;
+    h1{
+        font-size: 16px;
+    }
+}
 `
 export const ItemReviewInformation=styled.div`
-width: 1150px;
+width: 1220px;
 display: flex;
 justify-content: center;
-padding: 7px 20px;
 border-bottom: 1.5px solid rgba(55, 55, 55, 0.30);
+@media only screen and (max-width: 1240px) {
+    width: 650px;
+
+}
+@media only screen and (max-width: 670px) {
+    width: 354px;
+    flex-direction: column;
+    margin-top: 40px;
+}
 `
 export const Infbox1=styled.div`
 flex: 1;
 display: flex;
 img{
-    width: 135px;
+    width: 80%;
     height: 80px;
+}
+@media only screen and (max-width: 670px) {
+flex: 0;
+  img{
+    width: 349.683px;
+height: 170px;
+flex-shrink: 0;
+  }  
 }
 `
 export const Infbox2=styled.div`
@@ -748,6 +782,21 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
+@media only screen and (max-width: 1240px) {
+  flex: 3;
+}
+@media only screen and (max-width: 670px) {
+flex: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    h1{
+        font-size: 18px;
+    }
+    p{
+        font-size:14px;
+    }
+}
 `
 export const Infbox3=styled.div`
 flex: 1;
@@ -761,16 +810,41 @@ font-weight: 500;
 line-height: normal;
 
 }
+@media only screen and (max-width: 670px) {
+flex: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    p{
+        font-size: 14px;
+    }
+}
 `
 export const Questions=styled.div`
 display: flex;
 justify-content: center;
 gap: 30px;
+@media only screen and (max-width: 1050px) {
+    flex-direction: column;
+    align-items: center;
+}
 `
 export const QuestionsLeft=styled.div`
 display: flex;
+align-items: center;
 flex-direction: column;
-gap: 15px;
+gap: 28.5px;
+@media only screen and (max-width: 1050px) {
+    .accordion{
+    width: 645px;
+    margin-top: -10px;
+}
+}
+@media only screen and (max-width: 670px) {
+.accordion{
+    width: 360px;
+}
+}
 `
 export const QuestionsLeftTop=styled.div`
 width: 650px;
@@ -781,10 +855,17 @@ background-image: url('${map}');
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
+@media only screen and (max-width: 670px) {
+    width: 360px;
+}
+
 `
 export const QuestionsLeftBottom=styled.div`
 display: flex;
 gap: 20px;
+@media only screen and (max-width: 670px) {
+flex-direction: column;
+}
 `
 export const NumberEmail=styled.div`
 width: 289px;
@@ -808,6 +889,9 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 130%; /* 18.2px */
+}
+@media only screen and (max-width: 670px) {
+width: 335px;
 }
 `
 export const QuestionsRight=styled.div`
@@ -859,6 +943,24 @@ line-height: 100%; /* 14px */
 border: none;
 padding: 15px;
     }
+    .questionbtn{
+    width: 390px;
+    height: 45px;
+    margin-top: 20px;
+    @media only screen and (max-width: 1050px) {
+        width: 587px;
+    }
+    @media only screen and (max-width: 670px) {
+width: 330px;
+ }
+}
+ }
+
+@media only screen and (max-width: 1050px) {
+ width: 645px;
+}
+@media only screen and (max-width: 670px) {
+ width: 360px;
 }
 `
 export const Description=styled.div`

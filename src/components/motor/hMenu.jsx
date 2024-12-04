@@ -44,7 +44,7 @@ data.car.name.toLowerCase().includes(searchData.toLowerCase())
                     <Price><h1>{value.car.cost}</h1></Price>
                     <FromToButton style={{gap: '12px', justifyContent:'center'}}>
                 <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '95px'}}>Order</Button1>
-                <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '95px'}}>Compare</Button1>
+               <Link to='/compare' style={{textDecoration:'none'}}> <Button1 style={{border: '1px solid var(--blue, #006DAB)', width: '95px'}}>Compare</Button1></Link>
                 </FromToButton>
                 <MuiButtons>
                 <Stack spacing={2} direction="row">
@@ -56,7 +56,7 @@ data.car.name.toLowerCase().includes(searchData.toLowerCase())
                 </Link>
                 ))
             ):(
-              <div style={{justifyContent:'flex-start'}}>NOT FOUND</div>
+              <div>NOT FOUND</div>
             )}
        
     

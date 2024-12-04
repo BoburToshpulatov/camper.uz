@@ -165,7 +165,7 @@ All our vans are equipped with an electric step.</p>
 
 <TabOptions style={{marginTop: '20px'}}>
 <Box sx={{ width: '100%' }}>
-      <Box   sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)' }}>
+      <Box className='boxtabs'  sx={{ borderBottom: 1, borderColor: 'divider',background: 'rgba(0, 109, 171, 0.20)' }}>
         <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
           <Tab className='tabs' label="Item reviews" {...a11yProps(0)} />
           <Tab label="Q&A" {...a11yProps(1)} />

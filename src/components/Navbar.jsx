@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 const Navbar = () => {
   
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const [userAnchorEl, setUserAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -23,8 +24,19 @@ const Navbar = () => {
     setAnchorEl(null);
   };
 
+  const handleUserClick = (event) => {
+    setUserAnchorEl(event.currentTarget);
+  };
+
+  const handleUserClose = () => {
+    setUserAnchorEl(null);
+  };
+
   const open = Boolean(anchorEl);
   const id = open ? 'simple-popover' : undefined;
+
+  const open1 = Boolean(userAnchorEl);
+  const id1 = open ? 'simple-popover' : undefined;
   return (
     <NavContainer>
     <Logodiv>
@@ -59,8 +71,23 @@ const Navbar = () => {
 <Link to='/camping' style={{textDecoration:'none'}}><p>Camping Place</p></Link>
     </Menu>
     <Icons>
-      <Link to='/cart'><img src={cart} alt="cart-icon" /></Link>
-     <Link to='/' style={{textDecoration:'none'}}> <img className='user' src={user} alt="user-icon" /></Link>
+      <Link to='/orders'><img src={cart} alt="cart-icon" /></Link>
+    <img className='user' src={user} alt="user-icon" onClick={handleUserClick}/>
+     <Popover 
+        id={id1}
+        open={open1}
+        anchorEl={userAnchorEl}
+        onClose={handleUserClose}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'left',
+        }}
+      >
+        <Typography sx={{ p: 2 }}>
+        <Link to='/orders' style={{textDecoration:'none'}}><p>My orders</p></Link>
+          <Link to='/' style={{textDecoration:'none'}}><p>Log out</p></Link>
+        </Typography>
+      </Popover>
   <Select><option>En</option></Select>
       <img className='hamburg' src={hamburger} alt="" onClick={handleClick}/>
         <Popover 

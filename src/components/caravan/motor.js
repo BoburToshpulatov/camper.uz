@@ -693,8 +693,15 @@ margin-top: -1px;
 export const TabOptions=styled.div`
 .tabs{
     margin-left: 30px;
-    @media only screen and (max-width: 670px) {
+    @media only screen and (max-width: 1240px) {
         margin: 0;
+    }
+}
+.boxtabs{
+    @media only screen and (max-width: 1240px) {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     }
 }
 `
